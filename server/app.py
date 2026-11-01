@@ -114,7 +114,7 @@ async def lifespan(app):
         lock.close()
 
 
-app=FastAPI(title='Chatreel render service',version='1.0.0',lifespan=lifespan)
+app=FastAPI(title='Chatreel render service',version='2.0.0',lifespan=lifespan)
 
 
 def auth(request:Request):
@@ -137,8 +137,16 @@ def signature(job_id,expires):
 @app.get('/styles',dependencies=[Depends(auth)],operation_id='getStyles')
 def styles():
     return {'styles':[{'id':s,'modes':['offline','server']} for s in STYLES],
-            'limits':{'seconds':120,'frames':3600,'pixel_frames':1500000000,'queued_jobs':MAX_QUEUE,'body_bytes':MAX_BODY},
+            'limits':{'seconds':120,'frames':3600,'pixel_frames':1500000000,'production_pixel_frames':6000000000,'queued_jobs':MAX_QUEUE,'body_bytes':MAX_BODY},
             'voice':'subtitles or English eSpeak TTS; no voice cloning','webgl':'optional texture compositor'}
+
+
+@app.get('/templates',dependencies=[Depends(auth)],operation_id='getTemplates')
+def templates():
+    from education import TEMPLATES,THEMES
+    return {'templates':[{'id':k,'description':v} for k,v in TEMPLATES.items()],
+            'themes':list(THEMES),'profiles':['preview','production'],
+            'accuracy':'Checks layout, arithmetic and numeric scales; factual claims require human/source review.'}
 
 
 @app.post('/render',status_code=202,dependencies=[Depends(auth)],operation_id='submitFilm')

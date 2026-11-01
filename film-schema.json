@@ -21,20 +21,26 @@
         "blueprint",
         "chalkboard",
         "woodcut",
-        "pixel-rpg"
+        "pixel-rpg",
+        "studio",
+        "midnight",
+        "paper",
+        "ocean",
+        "coral",
+        "violet"
       ]
     },
     "width": {
       "type": "integer",
       "minimum": 320,
-      "maximum": 1280,
+      "maximum": 1920,
       "multipleOf": 2,
       "default": 640
     },
     "height": {
       "type": "integer",
       "minimum": 180,
-      "maximum": 720,
+      "maximum": 1920,
       "multipleOf": 2,
       "default": 360
     },
@@ -70,8 +76,7 @@
         "additionalProperties": false,
         "required": [
           "duration",
-          "title",
-          "objects"
+          "title"
         ],
         "properties": {
           "duration": {
@@ -147,8 +152,227 @@
                 }
               }
             }
+          },
+          "template": {
+            "enum": [
+              "title",
+              "concept",
+              "process",
+              "cycle",
+              "comparison",
+              "timeline",
+              "bar-chart",
+              "line-chart",
+              "donut-chart",
+              "equation",
+              "number-line",
+              "fraction",
+              "labeled-diagram",
+              "solar-energy",
+              "water-cycle",
+              "recap",
+              "quiz",
+              "code-walkthrough"
+            ]
+          },
+          "content": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "eyebrow": {
+                "type": "string",
+                "maxLength": 50
+              },
+              "subtitle": {
+                "type": "string",
+                "maxLength": 100
+              },
+              "body": {
+                "type": "string",
+                "maxLength": 240
+              },
+              "icon": {
+                "enum": [
+                  "sun",
+                  "panel",
+                  "inverter",
+                  "home",
+                  "battery",
+                  "cloud",
+                  "water",
+                  "plant",
+                  "book",
+                  "lightbulb",
+                  "atom",
+                  "globe",
+                  "gear",
+                  "check"
+                ]
+              },
+              "items": {
+                "type": "array",
+                "maxItems": 8,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "label"
+                  ],
+                  "properties": {
+                    "label": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 100
+                    },
+                    "detail": {
+                      "type": "string",
+                      "maxLength": 180
+                    },
+                    "value": {
+                      "type": "number",
+                      "minimum": -1000000000000.0,
+                      "maximum": 1000000000000.0
+                    },
+                    "icon": {
+                      "enum": [
+                        "sun",
+                        "panel",
+                        "inverter",
+                        "home",
+                        "battery",
+                        "cloud",
+                        "water",
+                        "plant",
+                        "book",
+                        "lightbulb",
+                        "atom",
+                        "globe",
+                        "gear",
+                        "check"
+                      ]
+                    }
+                  }
+                }
+              },
+              "unit": {
+                "type": "string",
+                "maxLength": 14
+              },
+              "data_kind": {
+                "enum": [
+                  "illustrative",
+                  "sourced"
+                ]
+              },
+              "source": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "url"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 100
+                  },
+                  "url": {
+                    "type": "string",
+                    "minLength": 9,
+                    "maxLength": 400
+                  }
+                }
+              },
+              "expression": {
+                "type": "string",
+                "maxLength": 100
+              },
+              "variables": {
+                "type": "object",
+                "maxProperties": 6,
+                "additionalProperties": {
+                  "type": "number",
+                  "minimum": -1000000000000.0,
+                  "maximum": 1000000000000.0
+                }
+              },
+              "result": {
+                "type": "number",
+                "minimum": -1000000000000.0,
+                "maximum": 1000000000000.0
+              },
+              "minimum": {
+                "type": "number",
+                "minimum": -1000000000000.0,
+                "maximum": 1000000000000.0
+              },
+              "maximum": {
+                "type": "number",
+                "minimum": -1000000000000.0,
+                "maximum": 1000000000000.0
+              },
+              "numerator": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 24
+              },
+              "denominator": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 24
+              },
+              "correct": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 3
+              },
+              "code": {
+                "type": "string",
+                "maxLength": 500
+              },
+              "highlight": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 8
+              },
+              "variable_units": {
+                "type": "object",
+                "maxProperties": 6,
+                "additionalProperties": {
+                  "type": "string",
+                  "maxLength": 14
+                }
+              }
+            }
           }
-        }
+        },
+        "allOf": [
+          {
+            "if": {
+              "required": [
+                "template"
+              ]
+            },
+            "then": {
+              "not": {
+                "required": [
+                  "objects"
+                ]
+              }
+            },
+            "else": {
+              "required": [
+                "objects"
+              ],
+              "not": {
+                "required": [
+                  "content"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "music": {
@@ -202,6 +426,13 @@
           }
         }
       }
+    },
+    "profile": {
+      "enum": [
+        "preview",
+        "production"
+      ],
+      "default": "preview"
     }
   }
 }

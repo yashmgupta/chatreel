@@ -5,7 +5,7 @@ import sys
 from PIL import Image,ImageDraw
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'renderer-py'))
-from render import STYLES,render_film,font
+from render import LEGACY_STYLES as STYLES,render_film,font
 f=json.loads((ROOT/'examples/film.json').read_text())
 sheet=Image.new('RGB',(960,230*len(STYLES)),'white')
 for row,style in enumerate(STYLES):

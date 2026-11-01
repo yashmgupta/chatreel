@@ -1,0 +1,38 @@
+{
+  "title": "Compare the quantities",
+  "style": "studio",
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "scenes": [
+    {
+      "template": "bar-chart",
+      "title": "Compare the quantities",
+      "duration": 7,
+      "narration": "",
+      "content": {
+        "subtitle": "Each length uses the same zero baseline",
+        "unit": "books",
+        "data_kind": "illustrative",
+        "items": [
+          {
+            "label": "Class A",
+            "value": 12
+          },
+          {
+            "label": "Class B",
+            "value": 20
+          },
+          {
+            "label": "Class C",
+            "value": 16
+          }
+        ]
+      }
+    }
+  ],
+  "music": {
+    "gain": 0.12,
+    "bpm": 96
+  }
+}

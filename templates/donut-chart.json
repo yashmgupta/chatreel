@@ -1,0 +1,37 @@
+{
+  "title": "A study session, divided",
+  "style": "paper",
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "scenes": [
+    {
+      "template": "donut-chart",
+      "title": "A study session, divided",
+      "duration": 7,
+      "narration": "",
+      "content": {
+        "subtitle": "The parts sum to the whole",
+        "data_kind": "illustrative",
+        "items": [
+          {
+            "label": "Reading",
+            "value": 30
+          },
+          {
+            "label": "Practice",
+            "value": 45
+          },
+          {
+            "label": "Review",
+            "value": 25
+          }
+        ]
+      }
+    }
+  ],
+  "music": {
+    "gain": 0.12,
+    "bpm": 96
+  }
+}

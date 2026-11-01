@@ -9,7 +9,7 @@ import numpy as np
 from PIL import Image,ImageDraw
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'renderer-py'))
-from render import STYLES,font
+from render import LEGACY_STYLES as STYLES,font
 report=[]
 for mode in ['offline','server']:
     sheet=Image.new('RGB',(960,220*len(STYLES)),'white')

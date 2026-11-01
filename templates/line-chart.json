@@ -1,0 +1,42 @@
+{
+  "title": "Growth across four observations",
+  "style": "midnight",
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "scenes": [
+    {
+      "template": "line-chart",
+      "title": "Growth across four observations",
+      "duration": 7,
+      "narration": "",
+      "content": {
+        "subtitle": "Equally spaced measurement times",
+        "unit": "cm",
+        "data_kind": "illustrative",
+        "items": [
+          {
+            "label": "Day 1",
+            "value": 2
+          },
+          {
+            "label": "Day 2",
+            "value": 3
+          },
+          {
+            "label": "Day 3",
+            "value": 5
+          },
+          {
+            "label": "Day 4",
+            "value": 7
+          }
+        ]
+      }
+    }
+  ],
+  "music": {
+    "gain": 0.12,
+    "bpm": 96
+  }
+}

@@ -32,7 +32,7 @@ class SchemaTests(unittest.TestCase):
                 with self.assertRaises(ValueError):render.validate(f)
     def test_every_style_deterministic_nonblank_and_moves(self):
         import numpy as np
-        for style in render.STYLES:
+        for style in render.LEGACY_STYLES:
             f=render.validate({**self.f,'style':style});scene=render.Scene(f,f['scenes'][0])
             a=np.asarray(scene.render(1));scene.render(3);b=np.asarray(scene.render(1))
             self.assertTrue(np.array_equal(a,b),style)

@@ -1,0 +1,24 @@
+{
+  "title": "Make the idea visible",
+  "style": "studio",
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "scenes": [
+    {
+      "template": "title",
+      "title": "Make the idea visible",
+      "duration": 6,
+      "narration": "",
+      "content": {
+        "subtitle": "Small lessons, clear pictures",
+        "body": "From a question to an explanation.",
+        "icon": "lightbulb"
+      }
+    }
+  ],
+  "music": {
+    "gain": 0.12,
+    "bpm": 96
+  }
+}

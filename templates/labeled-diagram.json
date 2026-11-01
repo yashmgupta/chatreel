@@ -1,0 +1,33 @@
+{
+  "title": "Read the model carefully",
+  "style": "studio",
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "scenes": [
+    {
+      "template": "labeled-diagram",
+      "title": "Read the model carefully",
+      "duration": 7,
+      "narration": "",
+      "content": {
+        "subtitle": "A schematic of common model components",
+        "icon": "atom",
+        "items": [
+          {
+            "label": "Center",
+            "detail": "Nucleus region"
+          },
+          {
+            "label": "Paths",
+            "detail": "Diagram guides"
+          }
+        ]
+      }
+    }
+  ],
+  "music": {
+    "gain": 0.12,
+    "bpm": 96
+  }
+}

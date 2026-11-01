@@ -1,0 +1,35 @@
+{
+  "title": "Check your understanding",
+  "style": "coral",
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "scenes": [
+    {
+      "template": "quiz",
+      "title": "Check your understanding",
+      "duration": 8,
+      "narration": "",
+      "content": {
+        "subtitle": "Think first; the answer appears later",
+        "body": "Which value is equal to three quarters?",
+        "correct": 1,
+        "items": [
+          {
+            "label": "0.25"
+          },
+          {
+            "label": "0.75"
+          },
+          {
+            "label": "1.25"
+          }
+        ]
+      }
+    }
+  ],
+  "music": {
+    "gain": 0.12,
+    "bpm": 96
+  }
+}

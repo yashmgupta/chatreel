@@ -1,0 +1,33 @@
+{
+  "title": "Average speed",
+  "style": "ocean",
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "scenes": [
+    {
+      "template": "equation",
+      "title": "Average speed",
+      "duration": 7,
+      "narration": "",
+      "content": {
+        "subtitle": "Substitute values, then calculate",
+        "expression": "distance / time",
+        "variables": {
+          "distance": 120,
+          "time": 2
+        },
+        "result": 60,
+        "unit": "km/h",
+        "variable_units": {
+          "distance": "km",
+          "time": "h"
+        }
+      }
+    }
+  ],
+  "music": {
+    "gain": 0.12,
+    "bpm": 96
+  }
+}

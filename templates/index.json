@@ -1,0 +1,95 @@
+{
+  "version": 2,
+  "templates": [
+    {
+      "id": "title",
+      "description": "Lesson opener with a visual concept and subtitle",
+      "file": "title.json"
+    },
+    {
+      "id": "concept",
+      "description": "A central idea connected to explanatory cards",
+      "file": "concept.json"
+    },
+    {
+      "id": "process",
+      "description": "Ordered steps with directional connections",
+      "file": "process.json"
+    },
+    {
+      "id": "cycle",
+      "description": "A closed sequence with curved directional connections",
+      "file": "cycle.json"
+    },
+    {
+      "id": "comparison",
+      "description": "Two sides with aligned points of comparison",
+      "file": "comparison.json"
+    },
+    {
+      "id": "timeline",
+      "description": "Dated milestones placed in supplied order",
+      "file": "timeline.json"
+    },
+    {
+      "id": "bar-chart",
+      "description": "Zero-baseline bars whose lengths encode supplied values",
+      "file": "bar-chart.json"
+    },
+    {
+      "id": "line-chart",
+      "description": "A labelled numeric series with a shared linear scale",
+      "file": "line-chart.json"
+    },
+    {
+      "id": "donut-chart",
+      "description": "Nonnegative values normalized to a complete whole",
+      "file": "donut-chart.json"
+    },
+    {
+      "id": "equation",
+      "description": "Restricted arithmetic expression, verified substitutions and result",
+      "file": "equation.json"
+    },
+    {
+      "id": "number-line",
+      "description": "Numeric values positioned on an explicit number line",
+      "file": "number-line.json"
+    },
+    {
+      "id": "fraction",
+      "description": "Exact numerator out of denominator as equal-area cells",
+      "file": "fraction.json"
+    },
+    {
+      "id": "labeled-diagram",
+      "description": "Central illustration with explicit callouts and leaders",
+      "file": "labeled-diagram.json"
+    },
+    {
+      "id": "solar-energy",
+      "description": "Simplified sunlight \u2192 PV DC \u2192 inverter AC \u2192 home flow",
+      "file": "solar-energy.json"
+    },
+    {
+      "id": "water-cycle",
+      "description": "Evaporation, condensation, precipitation and collection",
+      "file": "water-cycle.json"
+    },
+    {
+      "id": "recap",
+      "description": "A readable summary with numbered takeaways",
+      "file": "recap.json"
+    },
+    {
+      "id": "quiz",
+      "description": "Question, delayed reveal and an explicit correct option",
+      "file": "quiz.json"
+    },
+    {
+      "id": "code-walkthrough",
+      "description": "Literal code with line numbers and explanatory notes",
+      "file": "code-walkthrough.json"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "title": "Learning is a cycle",
+  "style": "ocean",
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "scenes": [
+    {
+      "template": "cycle",
+      "title": "Learning is a cycle",
+      "duration": 5,
+      "narration": "",
+      "content": {
+        "subtitle": "Each step connects to the next",
+        "items": [
+          {
+            "label": "Plan",
+            "icon": "book"
+          },
+          {
+            "label": "Build",
+            "icon": "gear"
+          },
+          {
+            "label": "Test",
+            "icon": "check"
+          },
+          {
+            "label": "Learn",
+            "icon": "lightbulb"
+          }
+        ]
+      }
+    }
+  ],
+  "music": {
+    "gain": 0.12,
+    "bpm": 96
+  }
+}

@@ -44,7 +44,7 @@ class ServerTests(unittest.TestCase):
         self.assertEqual(self.client.post('/render',headers=self.headers,content=b'x'*65537).status_code,413)
         self.assertEqual(self.client.get('/jobs/'+'a'*32+'/download').status_code,401)
     def test_real_browser_render_every_style_and_signed_download(self):
-        from render import STYLES
+        from render import LEGACY_STYLES as STYLES
         import shutil
         artifacts=ROOT/'artifacts/server-validation';artifacts.mkdir(parents=True,exist_ok=True)
         for style in STYLES:
@@ -76,6 +76,20 @@ class ServerTests(unittest.TestCase):
         finally:module.change("DELETE FROM jobs WHERE id LIKE 'reserved%'")
         job='b'*32;expires=int(time.time())-1
         self.assertEqual(self.client.get(f'/jobs/{job}/download?expires={expires}&token={module.signature(job,expires)}').status_code,401)
+    def test_educational_canvas_and_catalog(self):
+        catalog=self.client.get('/templates',headers=self.headers)
+        self.assertEqual(catalog.status_code,200)
+        self.assertEqual(len(catalog.json()['templates']),18)
+        film=json.loads((ROOT/'templates/equation.json').read_text());film.update(width=640,height=360,fps=12)
+        job=self.client.post('/render',headers=self.headers,json=film).json()['id']
+        result=self.wait(job)
+        if result['status']=='failed':self.fail((module.DATA/job/'worker.log').read_text()[-4000:])
+        self.assertEqual(result['backend'],'chromium-shared-canvas')
+        metrics=json.loads((module.DATA/job/'scene-metrics.json').read_text())
+        self.assertEqual(metrics[0]['result'],'60')
+        invalid=copy.deepcopy(film);invalid['scenes'][0]['content']['expression']='not valid('
+        self.assertEqual(self.client.post('/render',headers=self.headers,json=invalid).status_code,422)
+
     def test_hard_deadline_marks_failed(self):
         from unittest.mock import patch
         with patch.object(module,'TIMEOUT',0):

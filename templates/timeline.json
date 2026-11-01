@@ -1,0 +1,36 @@
+{
+  "title": "An experiment in three days",
+  "style": "violet",
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "scenes": [
+    {
+      "template": "timeline",
+      "title": "An experiment in three days",
+      "duration": 8,
+      "narration": "",
+      "content": {
+        "subtitle": "A sample project schedule, not historical data",
+        "items": [
+          {
+            "label": "Day 1",
+            "detail": "Ask the question"
+          },
+          {
+            "label": "Day 2",
+            "detail": "Run the experiment"
+          },
+          {
+            "label": "Day 3",
+            "detail": "Review the evidence"
+          }
+        ]
+      }
+    }
+  ],
+  "music": {
+    "gain": 0.12,
+    "bpm": 96
+  }
+}

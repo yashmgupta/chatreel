@@ -10,6 +10,7 @@ RUN --mount=type=secret,id=ca_bundle \
     pip install --no-cache-dir -r server/requirements.txt
 ENV CHROMIUM_EXECUTABLE=/usr/bin/chromium
 COPY film-schema.json film-schema.json
+COPY templates templates
 COPY renderer-py renderer-py
 COPY server server
 COPY LICENSE ATTRIBUTION.md ./
