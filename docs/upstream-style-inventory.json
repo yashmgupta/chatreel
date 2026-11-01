@@ -1,0 +1,1624 @@
+[
+  {
+    "style": "_template",
+    "sha256": "759bbcd16895f101523ac48127723249473dd21d10202533d2062f1423b017b1",
+    "headings": [
+      "# Style Name \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- This file holds only what stays true for EVERY film in this style: look, material, colour logic, type, motion quality,",
+      "- No story, arc, beat-by-beat shot table, prescribed opening or ending, score arc, BPM or key, demo durations, demo palette or props, end card or sign-off.",
+      "- A number measured in the demo becomes a rule here (\"the subject fills \u2265 1/3 of the frame\"); the demo's actual value",
+      "- Write rules, not history. \"Pitfalls\" are pitfalls of the medium, not of one demo prop."
+    ]
+  },
+  {
+    "style": "archive-lighttable",
+    "sha256": "2f18ac9a42822b7a9941866c42b0642e5417dea5431d61f141f6e11b29c1ec14",
+    "headings": [
+      "# Archive Light Table \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **The objects are real**: scans of public-domain or licensed archive items, at their true proportions, with their real damage (broken corners, emulsion edges, folds, pencil marks). Nothing in them is drawn or generated.",
+      "- **Light comes from below**: the table glows a near-white cool grey; film and glass transmit it, paper glows warm at its edges, opaque things read darker than the table.",
+      "- **The loupe is the camera's door**: every dive into an object goes through a loupe that lands on it. The inside of the lens is where the object changes state.",
+      "- **Catalogue truth**: every object carries its real identifier, date and title from its holder; numbers on screen come from the record."
+    ]
+  },
+  {
+    "style": "art-deco",
+    "sha256": "d73b30c0fa6d153487549d32d8c6c599733cf5e7576badec862a12da6d284761",
+    "headings": [
+      "# Art Deco \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Ground**: warm lacquer black, never neutral grey-black; a night sky may drift toward a deep emerald near the horizon.",
+      "- **Gold is a banded metal gradient** (dark \u2013 light \u2013 hot \u2013 light \u2013 dark); animate its `sheen` offset for a light sweep.",
+      "- **The signature stroke** (`gline`): a dark engraved underline ~1.6 px wider than the line, the gold gradient line, and a hairline highlight on top. Optional glow and a parallel twin (`double`). Nothing gets a black cartoon outline.",
+      "- **Volumes**: hard edge + airbrush (`airbrush`): a directional gradient from shade to light inside the shape, one consistent light direction (upper left by default), a thin gold rim on the lit side."
+    ]
+  },
+  {
+    "style": "ascii-crt",
+    "sha256": "cbe0b8957c785a165f85ccb3b8eba61c30c0462b32983db6a16c76046a2bb333",
+    "headings": [
+      "# ASCII / CRT Terminal: Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Font**: one monospace bitmap-style font (VT323, OFL); cell 0.4 em \u00d7 0.8 em (1:2). A large prerendered glyph atlas with a stroke for beam spread, scaled with `drawImage`, keeps zooms continuous and sharp.",
+      "- **Grids**: column count per shot (title ~20, terminal 80, picture 200+); a push-in can go until one cell holds a sub-grid of its own.",
+      "- **Density ramp**: each glyph's measured ink coverage \u00d7 dim / normal / bold \u2192 about 20 levels, near-duplicates dropped; a small ordered-plus-hash dither per cell; cells below a threshold stay blank. **Negative space makes ASCII art readable.**",
+      "- **Picture pipeline**: paint grayscale into an offscreen \"negative\" aligned exactly to the grid (several samples per cell; channels for phosphor, second colour, a flag), average per cell, pick a glyph. Interiors get local contrast (`m + 0.9\u00b7(m \u2212 mean)`) to keep outlines."
+    ]
+  },
+  {
+    "style": "backrooms",
+    "sha256": "2a3697a1ce37d0fbae3281220ae6154eeb9789233f1fae472d55ac169ba26fb4",
+    "headings": [
+      "# Liminal Found Footage \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **One first-person camcorder recording** (1990s VHS, 4:3), handheld, continuous.",
+      "- **An empty, familiar-but-wrong interior** that repeats: an office, a hotel floor, a school, a mall, a parking level, a hospital wing. Humming fluorescent light, no people.",
+      "- **Dread from emptiness, repetition, bureaucratic rules, and the camera's own machinery failing at the wrong moment.** Nothing chases anyone. A chill on the back of the neck, not a jump.",
+      "- **The medium is the storyteller**: focus, exposure, tape damage and the on-screen display carry the plot."
+    ]
+  },
+  {
+    "style": "blueprint",
+    "sha256": "de01fc7fcb38b17b58eb017c9cdbcb36b9242b029435a33587614c93088e1717",
+    "headings": [
+      "# Blueprint \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **The whole film happens on one sheet of blueprint paper** lying on a dark drafting table. The camera moves over it like an eye reading a drawing.",
+      "- **White line work on uneven Prussian blue**: centre lines, outlines, hatching, dimension lines, leader lines with numbered balloons, a title block, a notes column.",
+      "- **A 2D line-drawing language**: orthographic and oblique/isometric projection are allowed, **3D rendering never**.",
+      "- **Rigorous convention carries the tone**: the drawing is dry and exact; the notes can carry wit, warmth or gravity."
+    ]
+  },
+  {
+    "style": "brick-toy",
+    "sha256": "29b23e846951856b722a698a03c9458cfc17b4fc71d044f45d773acf2a742768",
+    "headings": [
+      "# Brick Toy \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Plastic**: ABS with strong clearcoat (~0.85, clearcoat roughness ~0.07); a roughness map with faint fingerprints and scratches (base ~0.17, scratches up to ~0.65); a bevel so edges catch a highlight.",
+      "- **Geometry**: rounded box bodies (bevel ~0.045 stud), studs with a thin lip. Unit = 1 stud pitch (8 mm); brick height 1.2, plate 0.4. Large baseplates are **matte** (lower clearcoat than bricks), or they reflect softboxes as a coloured wash.",
+      "- **Set**: a real surface with a real texture and real props at true scale (1 m = 125 studs). Household objects become landscape. Light it with a **neutral daylight studio HDRI**, never a tungsten interior (white bricks turn orange).",
+      "- **Light**: a toy-photography setup. A directional key from one upper side, warm-white, casting shadows (fit its shadow frustum to each shot so shadows stay crisp); two or three **RectAreaLight softboxes** (key front, cool rim behind, one over any big set) so glossy plastic shows clean rectangular highlights; environment kept low (~0.45) for contrast. Add a soft contact-shadow blob where the key's shadow falls behind a hero object."
+    ]
+  },
+  {
+    "style": "briefing-board",
+    "sha256": "44669da808da4ed37e2a4a0f6e5d2b23008775a3c4870add04641d714e9f323d",
+    "headings": [
+      "# Engineering Briefing Board \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Sources, facts, engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Board (z 0)**: procedural enamel, wiped ghost strokes, smudges, a window falloff, a sliding diagonal reflection; the frame shadows a warm grey wall.",
+      "- **Ink (multiply)**: flat colour at about 90 %, lighter core, round caps, a wet-tip glint on the stroke being drawn. Lettering: a marker font revealed glyph by glyph with seeded tilt and baseline jitter. Erasing leaves a blurred ghost (about 7 %).",
+      "- **Prints (z \u2248 6\u201314)**: photographs cut out at full resolution (a matting model, or a hand polygon / mask), clean edges, one shared grade (lower saturation, a touch warmer, lifted blacks). Thin structure (cables, wires, masts, railings) is measured in the photo and redrawn as clean lines in one colour. Shadow = blurred silhouette along one light vector, softer the higher the object. **No frame upsamples a photo**: \u2265 1 source px per screen px at its largest, measured; cap the zoom or find a bigger source.",
+      "- **Secondary layer** (only where the camera never goes before the end): the photos as pinned prints, a source card, sums on sticky notes, a small sketch. Texture and proof for the final wall, lighter than the main line."
+    ]
+  },
+  {
+    "style": "caption-news",
+    "sha256": "71d67fb2f47eac1489bc96d302f9b206700cb0533c332e3650b498e3e2014603",
+    "headings": [
+      "# Caption News \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Frame and layout (1920\u00d71080)",
+      "## 3. Editing grammar",
+      "## 4. Caption card (the subtitle *is* the graphic)",
+      "## 5. Graphics",
+      "## 6. Grade and image quality",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Material",
+      "## 10. Engine",
+      "## 11. Pitfalls",
+      "## 12. Variation space"
+    ],
+    "rules": [
+      "- **Cuts on a 120 BPM half-beat grid** (every cut at a multiple of 0.5 s). Footage shots 1.5\u20133 s; data cards and documents 3\u20134.5 s; a shot that holds a comparison stays until every item has been fully on screen \u2265 2.5 s.",
+      "- **Captions cross cuts.** A caption can run over two shots (picture changes, words don't); captions change at most every ~2.5 s even when shots change every 1.5 s. Reading time, not shot length, sets the caption clock.",
+      "- **The order of a fact**: footage (feeling) \u2192 the number on a card \u2192 the document line that says it \u2192 the consequence. Never a number without its source tag in the same shot.",
+      "- **Transitions are few and fixed**: hard cut (default); a 1\u20132-frame white flash on the turn and on the freeze; a card sliding in from the right with speed streaks (0.18 s); a split screen opening from its divider; grid panels rising staggered (0.1 s apart); a punch-in (0.3 s ease-out to ~1.25\u00d7) on the culprit; a **mask transition** where a photo grows out of a map shape. No dissolves, no page turns, no 3D flips."
+    ]
+  },
+  {
+    "style": "cel-anime-80s",
+    "sha256": "1e16f5c6f90ebf09556ec94d37434400d309c978e00ee89e9d38dec476664eaf",
+    "headings": [
+      "# 80s Cel Anime \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Background painting**: soft airbrushed gradients, glowing windows, wet reflections; painted once at load (colour + emissive pair), then only slid.",
+      "- **Cel** (characters, vehicles, props): flat fills, **hard-edged** shadow and highlight shapes, **coloured** outlines, never pure black; stepped at 12 or 8 fps.",
+      "- **Light**: backlit cel (\u900f\u904e\u5149): signs, lamps, title letters glowing *through* the frame; flares, halation.",
+      "- **Playback**: videotape on a CRT: chroma bleed, scanlines, grille, phosphor glow, darkened corners, faint noise."
+    ]
+  },
+  {
+    "style": "chalkboard",
+    "sha256": "7f89f1a4694805e6bc767050007a6b44f2b7ab2474b0e3244032d3a0269b3e1c",
+    "headings": [
+      "# Chalkboard \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "### Voice and subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **A clean, freshly wiped board.** One even deep ink green with its own fine grain and very slow mottling. No history on the slate: no old swirls, no ghost lessons, no floating dust, no bokeh.",
+      "- **Writing that grows like a hand writes.** Strokes appear along their centre line in the correct stroke order, with pressure: pressed starts and corners, points that lift, \u637a feet that spread, hooks flicked off.",
+      "- **Three chalks at most.** White for structure, one accent chalk for the single part the lesson tracks, one pale chalk for a second hand (a pupil, a visitor).",
+      "- **A real object in a real room.** Wooden frame, a tray with sticks of chalk, painted tian-zi grids, sliding panels, a wall and a clock around it."
+    ]
+  },
+  {
+    "style": "circuit-board",
+    "sha256": "3f5244726e732a8407355bebdec309942410104af32c956372ff4f1477a0cd9b",
+    "headings": [
+      "# Circuit Board \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "### Voice-over and subtitles",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- A top-down board in every frame: copper pour with clearances cut around everything, traces with 0/45/90\u00b0 runs and mitred corners, gold pads and vias, white monoline silkscreen. Nothing is drawn in perspective.",
+      "- Information moves as light on copper. The way the light moves *is* the explanation: a pulse, a stream, a rocking dash, a pad that flashes.",
+      "- Two scales on one board: whole regions (a map, a supply chain, a city) are drawn in the same language as single components, and the camera passes between them without changing medium.",
+      "- Only real things are drawn. Every trace, pad and label stands for something in the subject; empty copper is filled with what boards really have (stitching vias, via fences, solder-mask mottling), never with decorative routing."
+    ]
+  },
+  {
+    "style": "city-symphony",
+    "sha256": "8b78d2b08cadb045ac1649cade1e5274fba935b1177c64c176e7567c6e8b31e1",
+    "headings": [
+      "# Time-lapse Symphony \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar \u2014 editing",
+      "## 7. Sound palette",
+      "## 8. Native moves (and how they are built)",
+      "## 9. Pitfalls of the medium",
+      "## 10. Footage: where it comes from",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **An edit style.** The picture is real footage of a place (time-lapse, hyperlapse, aerials, slow motion, archive film, photographs). The style lives in *how time is bent* and *where the cuts fall*, not in a drawn look.",
+      "- **The score is the script.** It is written first, with a clear arc: minimal repetition \u2192 acceleration \u2192 climax \u2192 a sudden stop \u2192 acceleration again \u2192 hard stop \u2192 a quiet coda. Every cut sits on a beat or a subdivision of it.",
+      "- **Machines fast, people slow.** Cars, trains, clouds and light are sped up until they become lines; the one slowed moment is something fragile (a soap bubble, steam, a flag, a flock), and people appear as crowds, tracks or long-exposure ghosts.",
+      "- **Few words, each one earned.** On-screen text is a title, a handful of numbers that state the size of the place (each from an official source), an archive date, and one line from a real public-domain text at the end."
+    ]
+  },
+  {
+    "style": "countdown",
+    "sha256": "867cca6e0c9bb0d6fb914cc4e9a2e295623ecd345fda9bd00bc362ff233f220f",
+    "headings": [
+      "# Live Countdown Split-screen \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Edit grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves (and how to build them)",
+      "## 9. Pitfalls of the medium",
+      "## 10. Materials, sources, facts, engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Three kinds of material at once**: video cameras of the same moment (2\u20138), documents (a fact sheet, a filing, a schedule: shown as paper, never retyped as a slide), and photographs (the people of the day). Our own type explains them; type printed in the material is only picture.",
+      "- **Data drawn by us**: checklists, bars, a flight or process profile, a second countdown to the next milestone. Every number comes from an official source (\u00a710).",
+      "- **Cells**: hard rectangles on near-black `#06080A`, 24 px outer margin, 8\u20139 px gutters, 1 px border `rgba(222,232,238,.16)`, a light radial vignette (to 36 % black) on video cells. No rounded corners, no drop shadows, no 3D.",
+      "- **Camera chip** top-left of every cell: dark plate 84 %, a square dot (orange = synced video, grey = unsynced or still), code (`CAM 4`, `DOC`, `LIST`), Chinese name, small English name."
+    ]
+  },
+  {
+    "style": "crayon-book",
+    "sha256": "ba558478fe519fa6777fe28fa7d1980117297c7beb6fe2e366ef6f00688aa175",
+    "headings": [
+      "# Crayon Picture Book \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Paper**: warm off-white (around `#f4efe3`). The tooth is **anchored to the page** (it pans with the camera; on zoom two octaves cross-fade so grains stay ~1 px on screen), never screen-fixed: three octaves of value noise plus a horizontal fibre term. A final pass embosses it (lit top-left), less where wax filled the tooth. Low mottling \u00b12 %, warm vignette.",
+      "- **Wax adhesion (the core rule)**: every crayon layer is a canvas where RGB = colour and **A = pressure**; the shader deposits wax where `tooth > 1 \u2212 k\u00b7pressure` (soft edge). Light pressure = speckled peaks; heavy = almost solid, slightly darker.",
+      "- **Strokes**: ribbons with a low-frequency hand wobble (1\u20132 px), width \u00b115 %, tapered ends, a denser core and 1\u20132 thin streaks. Characters and buildings get the heaviest outline; refined \"adult\" objects about half.",
+      "- **Colouring**: back-and-forth zig-zag hatching with a visible gap, each pass at a slightly different pressure; **overshoot the outline by a few px**; a lighter cross-hatch pass on big areas."
+    ]
+  },
+  {
+    "style": "dark-keynote",
+    "sha256": "b0791b5e95f56bf46c621e6064d426ebbee810c7515fb87e951b73668a2a0d24",
+    "headings": [
+      "# Dark Tech Keynote \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Stage**: a near-black base with a radial lift at the upper centre, one large cool glow at single-digit opacity off-centre, a 50\u201355 % corner vignette. A hairline grid (white at ~3 %, every 4th line ~6 %) on a 48 px module. No grain.",
+      "- **UI kit, all original and drawn in code**: rounded windows (title bar with only a small glyph and title; never traffic-light buttons, menu bars or docks), notification cards, file icons with mono filenames, procedural thumbnails, list rows, tabs, badges, bars, uniform tiles.",
+      "- **Surfaces**: three steps of raised dark surface, 1 px border (~8 % white), 1 px inner top highlight, soft shadows.",
+      "- **Depth**: a 2.5D camera (`s = 1/(1/zoom \u2212 z)`); cards near the lens blur with magnification. Rotations use strip-rendered perspective (rotY \u2264 ~24\u00b0)."
+    ]
+  },
+  {
+    "style": "data-physical",
+    "sha256": "2d2e6685b0dcf8a1e2ba2ff904ab02d51aede1f5dbb246fd2f6e81c8d146f208",
+    "headings": [
+      "# Data Physicalization \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "### Sources, licences, facts",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **The unit is an object.** One plate, block or coin equals one stated quantity, and the rule is said on screen once (\"1 plate = 10 GW\"). A heavier material marks every tenth unit, so the stack is its own ruler.",
+      "- **Scale is exact.** Heights, counts and areas are computed from the data; rounding is one unit at most and written in the facts. Two series compared on the same base use the same unit.",
+      "- **Studio light, real matter.** Metal reflects an HDRI, wood shows grain, acrylic transmits; nothing glows, nothing is outlined, no fake UI.",
+      "- **Growth is assembly.** Data increases by pieces being placed, one after another, with weight and sound; it never scales or morphs."
+    ]
+  },
+  {
+    "style": "dataviz",
+    "sha256": "e94013d5a7c548c8844598a671ff0b49bc78770696cbca0d8d00846336f3c67f",
+    "headings": [
+      "# Data Storytelling \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Paper**: warm cream, fixed-seed fibre noise and a faint dot grid in world space. **Ink**: dark warm ink for axes and series, pale warm grey for grid and zero line, IBM Plex Mono ticks.",
+      "- **Marks**: data dots carry a thin ink ring so pale values stay visible on cream. A mark lands with a short pop and a thin ripple; suppress ripples when marks arrive closer than ~0.1 s.",
+      "- **Handwriting** (Caveat) in pencil, per-glyph jitter, graphite grain, written on as the tip dances over the x-height. Leaders are wobbly curves ending in an **un-closed** ring around the mark.",
+      "- **The red\u2013blue pencil**: hex body, blue half / red half, sharpened wood cone. Only the tip end shows, from the lower right; its shadow drifts farther and softer with lift; sharp tip, soft body."
+    ]
+  },
+  {
+    "style": "desktop-flythrough",
+    "sha256": "d8c9113e10d7b3a5f65bbee86643305a5dc29739d0338091e1d0974ecf6d5eb7",
+    "headings": [
+      "# Desktop Flythrough \u684c\u9762\u7a7f\u68ad \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "### Voice-over and subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **The desk is the world.** A matte paper mat with a regular dot grid lies on a light wooden desk, lit by one low warm sun through a window. Everything sits on it and casts a long, soft shadow. A few everyday desk things (a pen, sticky notes, a mug, earbuds) sit around the edges as foreground and background layers.",
+      "- **Interfaces are paper cards.** Phones, tools and dashboards are rounded slabs a few millimetres thick with the interface printed on top. They are places: characters stand and hop on them, and parts of the interface rise out of them as small 3D objects.",
+      "- **The cast are pixel sprites made solid.** One bevelled cube per pixel, thicker inside than at the edge, eyes standing proud. They lie on a card as flat stickers and pop up into toys; they blink, wait on the beat, get squashed and spring back.",
+      "- **Every stop is busy.** At each station something small moves besides the main action: debris bursts, data cubes hop, a lamp blinks, marks vibrate."
+    ]
+  },
+  {
+    "style": "engraving",
+    "sha256": "0c6816b8b47163d158ae0ea668feecf53dcbef9d1310e27b9e797d9b9e7aac0d",
+    "headings": [
+      "# Copperplate Engraving \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **The sheet is the world**: 1920\u00d71080 world units of laid paper (cream, ~`#f1e8d2`) with world-space texture (fibres, laid lines, sparse foxing) that zooms with the camera; a pressed, bevelled **plate mark** and a ruled border (rule + hairline) frame it.",
+      "- **Ink** is one warm near-black (~`#1c1510`). Width ratios: outlines heaviest (swelling \u00d70.45\u20131.35), first hatching from a hair (~0.18 px) to ~2 px, crossing ~0.8\u00d7, third family ~0.6\u00d7, hair and stipple finest. Spacing is **relative to the figure** (~1/180 of its height, a little wider per later family) so small figures never go grey.",
+      "- **Swell law** for every hatch line: width \u00d7 (0.2 + 0.8\u00b7sin(\u03c0u)^0.7), tapered over its first and last ~22 %. Families switch on by tone thresholds (~0.14, ~0.5, ~0.75 on a 0\u20131 tone).",
+      "- **One light direction** for the whole film (upper left by convention); heavier outlines away from it; tone fields come from the shape (pillow lighting, analytic spheres and cylinders), never from texture. **Occlusion** is geometric: lines stop at the shapes in front."
+    ]
+  },
+  {
+    "style": "game-show",
+    "sha256": "cadee8f0ff8cfc206b49d852e5a0b15d7da432ad497fa8b19ac568ce386ff8e3",
+    "headings": [
+      "# Game Show Flat \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Everything is on the grid.** One fixed, fast tempo. Every pop, drop, stamp, typed character and camera punch sits at a (bar, beat) and is also a sound event; the score is generated from the picture's own timeline, so they can't drift.",
+      "- **One drawing kit, many sets.** Flat fills, one heavy ink outline, round caps, hard offset shadows; each round gets a new saturated background colour and pattern.",
+      "- **Characters are toys.** One body construction for the whole cast, told apart by colour, a belly patch, one head accessory and a name tag. They hop on the beat, squash on hits, throw arms up on a shout.",
+      "- **A round = a repeatable verb + a win.** The topic is split into rounds; each round has one action that can repeat on a beat, and ends on a judgement the audience reads in one glance."
+    ]
+  },
+  {
+    "style": "glass-product",
+    "sha256": "630fa80cde0930154ba64f15bce5c8ee0c8dcf48d921253f8c7e3194712c8fb5",
+    "headings": [
+      "# Glass Product Render \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Studio = a strip-light scene, not an HDRI.** Photo-studio HDRIs contain windows and clutter that print as messy streaks on glass. Build a tiny black scene of emissive planes and bake it to PMREM **every frame** (`pmrem.fromScene(env, 0, 1, 1000)`, dispose the previous RT): tall side strips behind (silhouette), a wide far strip (horizon rim), a soft top box (volume for frosted glass and metal), a weak front card (off when concave glass faces camera), a top-front key only when parts must be read one by one, an accent card driven by the pulses, and **the sweep**: a tall strip on an arc *behind the camera* (azimuth = camera + \u03c0). Being real geometry, its highlight, refraction and dispersion move physically; never paint a 2D highlight.",
+      "- **Clear glass**: `MeshPhysicalMaterial`, transmission 1, roughness \u2248 0.015, IOR \u2248 1.5, thickness sets lensing (thicker = stronger), **dispersion on** (three r163+), near-neutral attenuation, `side: DoubleSide` so other glass sees its back faces.",
+      "- **Frosted glass**: transmission ~0.85, roughness ~0.4, milky tint, thick. On black it reads as dark grey plastic unless **something bright is behind or inside it**: an opaque emissive shape inside (blurred into a soft internal glow) and/or a bright gradient behind.",
+      "- **Metals** make transparency worth looking at: satin bands, chrome (roughness \u2265 ~0.14), brushed surfaces via a roughness map, boards with gold traces. **Anything inside transmissive glass must be opaque** (only opaque objects reach the transmission buffer)."
+    ]
+  },
+  {
+    "style": "halftone-dossier",
+    "sha256": "71b4b8f089836d95f6bd8fc3719ae184cbf2be4a04ecd935c6d55d89a5bb558d",
+    "headings": [
+      "# Halftone Dossier \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **The whole film is paper.** A warm cream sheet with low-frequency mottling, fine grain, a vignette and a fold; dark scenes are printed on it too, never glowing.",
+      "- **Shading is never a gradient**: it is halftone dots whose size follows a density field. Two or three dot layers at different screen angles overprint (multiply); that is the \"printed\" feel.",
+      "- **Bureaucratic apparatus**: case numbers, file chips, numbered exhibits, height charts, name plates, stamps. Their seriousness is the frame; the subject can be grave or trivial.",
+      "- **Loud but readable**: one idea per 2\u20134 s card, one big headline, one visual gag or exhibit, one caption line."
+    ]
+  },
+  {
+    "style": "hd-2d",
+    "sha256": "bdc5ef4f60d8ba9ff6e5151391a6a62d8da4685d393c242699fd5c6188f0551a",
+    "headings": [
+      "# HD-2D \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Constant texel density**: surfaces drawn per pixel on small canvases, `NearestFilter`, world-space UVs at one density (e.g. 24 px/m); sprites on a similar scale (a character ~30\u201360 px tall).",
+      "- **Colour from ramps**: 3\u20136 swatches picked by brightness through a narrow 4\u00d74 Bayer dither. Sprites get a 1 px *selout* outline (neighbour colour darkened toward the ink).",
+      "- **Boxes and cylinders** for buildings, floors, rock; **billboards** (instanced) for foliage, distant props, ridges. Windows are emissive pixel panes; fire is a pixel atlas stepping at ~10 fps; water a shader with quantized ripples and light columns toward the camera.",
+      "- **Light rig per set**: one dim shadow-casting key, a hemisphere fill, **practical point lights** with shadows (lamps, fires, windows, screens), and a **front fill** ~2 m before the hero (a billboard lit from behind stays black). An additive glow sprite on every source gives bloom something to grab."
+    ]
+  },
+  {
+    "style": "hologram-hud",
+    "sha256": "81e2c6b0ede2cc211a8dd676417a1ce5efda278514f273c5249165e38ff34573",
+    "headings": [
+      "# Sci-fi Hologram HUD \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Stage**: near-black tinted by the hue, a radial lift behind the subject, a fading dot grid, a strong vignette.",
+      "- **Projector pad** in true perspective: concentric rings (one bright, one dashed), ticks, faint rays; it rotates slowly and spins with any turntable move.",
+      "- **Wireframe**: additive ~1.3 px strokes in a few alpha levels set by **depth fog** (near bright, far ~25 %), plus two low-res glow passes.",
+      "- **Hot edges** (near-white of the hue) only for what matters now: the scan front, inner pieces flagged `hot` when opened, a light wave, a part being pinged."
+    ]
+  },
+  {
+    "style": "impasto",
+    "sha256": "38a0dcb2808c2ff03ef721c1319b9145438b4074ed37ab7a09dcf20b7268e062",
+    "headings": [
+      "# Impasto \u00b7 Palette Knife \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Value first.** Design each set as a flat, value-planned illustration (3 values minimum), then convert it to strokes. If the reference doesn't read at 480 px wide, no brushwork will save it.",
+      "- **Stroke sizes by importance and depth.** Coarse to fine: large planes in sky and walls, a few px only at edges and faces (per shape: `maxR`, `detail`, `dir`).",
+      "- **Strokes never cross shape groups**, so silhouettes stay crisp. Lost edges are opt-in (put two shapes in the same `group`).",
+      "- **Thin underpainting** (the reference itself, blurred ~1.5 px) under the strokes, so the canvas never peeks through as outlines."
+    ]
+  },
+  {
+    "style": "ink-wash",
+    "sha256": "5d71598f0b9cf4034c6461956b0d8bd63bd33750b4045376044f0d956b01d645",
+    "headings": [
+      "# Chinese Ink Wash \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Paper** is procedural, in the compositor, never a texture file: warm rice paper (around `#F2ECDE`), cloud mottling, long fibres, pulp flecks, grain that fades when zoomed out (or it shimmers), a light vignette; anchored to the world.",
+      "- **Ink** is stroke opacity multiplied onto paper (never an overlay), in five tones (\u58a8\u5206\u4e94\u8272):",
+      "- **Brushstroke model**: centreline \u00d7 pressure profile \u00d7 width noise, plus 4\u201360 **bristles** whose ink load drops along the stroke and breaks on long-scale noise. `dry` runs from a solid wet stroke to flying white (dry strokes are bristle tracks only).",
+      "- **Loaded stroke**: bristles darker on one side, so the stroke carries its own contour: this makes bodies, rocks and waves read as ink, not vectors."
+    ]
+  },
+  {
+    "style": "iso-infographic",
+    "sha256": "a3bf89913255043ff2c8616bff9be9f9536efe1eb7a3b98c755cb4189bd7dff1",
+    "headings": [
+      "# Isometric Infographic \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Flat, true isometric.** No perspective, no outlines on solids; shapes are separated only by the three tones of each face. The projection never rotates or tilts.",
+      "- **Infographic furniture is part of the picture**: leader lines, label pins, dashed cut lines, hatched section faces, tracking rings, a legend, a route line all live in the world.",
+      "- **Numbers are built from icons** (Isotype), and they add up.",
+      "- **A diorama**: the system sits on a floating board or plinth with a visible cross-section at its edges, on a pale ground."
+    ]
+  },
+  {
+    "style": "isometric-picture-book",
+    "sha256": "9e838ed305b5fec5002b9aa452cb28730d13ec84dd529a801fb3b174e81cec83",
+    "headings": [
+      "# Isometric Picture Book \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "### Narration & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **One real place, full bleed.** A platform, a gate, a cabin, a crossing, a counter: the ground runs off every edge of the frame. No floating board, no frame line, no vignette. A topic that travels (a parcel, a route, a production line) can still be one place: one continuous ground at one scale, with the stops along it (see \u00a711); what breaks the look is a separate board, a map view or a change of scale for each stop.",
+      "- **People are the diagram.** Slim figures seen from behind, no faces and no hands, move only when the rule says so. Who moves first, who waits, who sits is the information.",
+      "- **Type lies on the ground.** Each idea is one key word or number painted on the floor, big and small sizes, one accent character, landing one character at a time.",
+      "- **The cut-away.** Whatever stands between the camera and the action (a roof, a canopy, the top of a wall, a glass fa\u00e7ade) is cut low or lifts off like a paper flap, so the camera always looks into the place from above."
+    ]
+  },
+  {
+    "style": "kino-montage",
+    "sha256": "8c63deefda22d4677d286ddfffb243ce6385dfa7ab56fbc493705fe13908f204",
+    "headings": [
+      "# Constructivist Montage \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Edit grammar",
+      "## 6. Formats (each is a function in `demo/index.html`)",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Footage",
+      "## 10. Facts",
+      "## 11. Engine",
+      "## 12. Pitfalls of the medium",
+      "## 13. Variation space"
+    ],
+    "rules": [
+      "- **Four kinds of element only**: **bands** (red or ink, along the axis), **windows** (rectangles or parallelograms holding film or photographs), **cut-outs** (people scissored from photographs with a paper-white border), **type blocks**. Plus one paper-fibre texture over everything.",
+      "- **The print grade** (one function for film, photos and documents): luminance \u2192 percentile stretch (film: one pair of percentiles per clip, so it never pumps; 0.7 / 99.5; photos 0.8 / 99.4) \u2192 S-curve `x + s\u00b7(x\u22120.5)\u00b7(1\u2212|2x\u22121|)\u00b72`, s = 0.32 (documents 0.18, they keep their paper) \u2192 map to ink\u2192paper: `rgb = INK + (PAPER \u2212 INK)\u00b7g`. Archive film keeps a \u00b12.5 % per-frame flicker inside its window (`hash(frame)`), photographs and documents do not.",
+      "- **Cut-outs**: a person-segmentation model (u2net_human_seg via onnxruntime) \u2192 threshold 0.5 \u2192 median filter \u2192 largest component \u2192 7 px paper border dilated outside the mask. The border is the medium's own look and hides the model's edge errors. Group photos rarely segment cleanly: use them whole in windows.",
+      "- **Documents**: scans at full resolution, never retyped. They are marked: a red highlighter bar in `multiply` over the exact sentence, a hand-drawn red ellipse round a heading, a red circle on a map. Drawings on a document (a chart, a map) may be lifted off the page and reused, keyed from their paper (`alpha = (205 \u2212 luminance) / 90`)."
+    ]
+  },
+  {
+    "style": "lidar-survey",
+    "sha256": "d1b60fda2793932286372e7cf68d62af5723bba14c37e9a437639ea57b1a310d",
+    "headings": [
+      "# LiDAR Survey \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **The cloud is the data**: every point is a real return at its measured position; points appear, glow, lift away or give way to a surface, but are never moved into a shape.",
+      "- **Points become a surface**: a front (scan line, cutting plane) behind which the cloud condenses into a solid model of the same place.",
+      "- **Classification is a lever**: ground, vegetation, buildings, water are layers to peel, isolate and recolour.",
+      "- **Measurement in hairlines**: one reading at a time, in the accent, attached to what it measures; numbers from the points or an official source."
+    ]
+  },
+  {
+    "style": "living-screencast",
+    "sha256": "02e8e5521fe1f553b0e58dacc2a556aea361dd5823e2ca0996963839d3c7d5c7",
+    "headings": [
+      "# Living Screencast \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Real UI, redrawn**: every label, mode name and shortcut matches the real product; no screenshots, no lorem ipsum. Demo content (code, data, test output) is coherent, and the app under test really changes.",
+      "- **Pixel grid is sacred**: the mascot, its props (pencil, \"!\", sparkles, heart, dust) and trails share one square-pixel grid with crisp edges. It scales with the camera; its position snaps to half-pixels, so its motion feels stepped.",
+      "- **Gravity = top edges of UI**: the mascot only stands on the top edge of a real element (input box, menu, list row, code line, button, status bar, the letters of a heading). Its position comes from **measuring the live DOM** every frame, never hand-placed coordinates.",
+      "- **Window on wallpaper**: the app floats on a desktop with a soft shadow; zoom never shows beyond the monitor."
+    ]
+  },
+  {
+    "style": "lowpoly-island",
+    "sha256": "1ae7bcd6aa3d521f563d8905f8109842fd7252ff8b70c1bd18265105a8a450f9",
+    "headings": [
+      "# Low-poly Isometric Island \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Geometry** (world unit = one hex tile's circumradius): pointy-top hexagonal columns (`CylinderGeometry(r, r, h, 6)`), axial \u2192 world `x = \u221a3(q + r/2)`, `z = 1.5 r`. Terrain height encodes material (sand low, grass, hills, rock highest). A thin separate top cap sits over a darker side colour; **sink the side column's top below the cap** or it z-fights. Leave a small gap between tiles so AO draws the seams.",
+      "- **Props** are primitive assemblies: boxes, prisms, low-segment cylinders and cones, icosahedra at detail 0, pinched boxes. Emissive parts (windows, lamps) get their own material per object so they can light individually.",
+      "- **Materials**: `MeshStandardMaterial({ flatShading: true, roughness \u2248 .9 })`, **no textures**. Jitter each tile's lightness a few percent so the ground isn't a spreadsheet.",
+      "- **Water** (if any): a dense non-indexed plane displaced by summed sines in the shader, flat-shaded so each triangle glints on its own (not too low a roughness or facets flash white); a coarse plane below for zoom-outs; a **shallow map** redrawn per frame where land exists, mixing deep \u2192 shallow colour with a faint foam rim; a thin transparent ring at each tile's water line for surf."
+    ]
+  },
+  {
+    "style": "memphis-diorama",
+    "sha256": "7f1748f2741d069e074172800d501ec00527db8a018e1e5ab4ecfa630ed6763b",
+    "headings": [
+      "# Memphis Diorama \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Paper and a grainy frame.** A warm white ground; the picture lives in a rounded, organic frame whose edge dissolves into grain. It grows open from the centre at the start and draws back in at the end.",
+      "- **Memphis flat colour.** Saturated primaries plus pastels, flat fills, no gradients; a deep-indigo ink outline; small patterns tiled on surfaces (dots, stripes, zigzags, terrazzo flecks, halftone).",
+      "- **The eye of a model-maker.** High three-quarter, top-down or cutaway views. The film always looks at a *place*, never at a person.",
+      "- **Small motions everywhere.** Water, wind in trees, cloud shadows, birds, boats, walkers, lights coming on one by one. The place is alive because of them, not because of a protagonist."
+    ]
+  },
+  {
+    "style": "microgame",
+    "sha256": "ad13d34bd06a65bef81b04f531c4f256bcc0bff4f229f976d52e07d5beef9dd5",
+    "headings": [
+      "# Microgame Frenzy \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **A microgame = a shouted command word + 2.5\u20134 s + one action + one result** (success, or a funny failure).",
+      "- **Each microgame uses a different visual medium** (crayon, ink wash, terminal, risograph, pixel, blueprint, Swiss type, clay, cut paper, woodcut\u2026). The jolt of each switch is both the joke and the beat.",
+      "- **One fixed home look** holds the film together: a show stage with a host, a lives counter and a stage number, which the film returns to between games.",
+      "- **It keeps accelerating**: every few games tempo, game length, dwell, command hold and animation frame rate step up together."
+    ]
+  },
+  {
+    "style": "microscope",
+    "sha256": "63040631bdc28a3c7f8cf05e2e8523969becd0267741e00dd3e171c22be16e92",
+    "headings": [
+      "# Microscope Story \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **The specimen is a photograph**: a real micrograph or whole-slide scan of the actual sample, CC0, public domain or CC BY. Nothing on the specimen is drawn, retouched or generated. A whole-slide image (WSI) is the ideal source: one sample, one registered pyramid from millimetres to microns, with the pixel size in its metadata.",
+      "- **Scale is the camera**: one log-space dive (and, when the story wants it, the climb back) through nested plates of the same sample. The scale bar shortens and jumps in a 1-2-5 sequence, the field-of-view readout rolls, the magnification steps.",
+      "- **Focus has a grammar**: a rack-in from soft at the start, a short breath (blur + a hint of field change) each time the magnification changes, a focal-plane sweep across the frame when the camera lands.",
+      "- **Readings are measured**: every number is computed from the file (pixel size \u00d7 pixels) and the screen says how it was measured. Describe what was measured; never diagnose. Keep a `FACTS.md` in the project folder (claim, source URL, quoted wording, or the measurement method) and deliver it with the film."
+    ]
+  },
+  {
+    "style": "midcentury-toon",
+    "sha256": "e73614b6f9e2f2e8ee279f4909da8429235b96f6d13a12345b6e57d5823c30b8",
+    "headings": [
+      "# Mid-century Cartoon \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Off-register cels**: fill drawn with a small offset (a few px, down-right) from its line; the offset jitters \u00b11\u20132 px on twos. Keep it on everything, text included; switch it off only for a crisp diagram.",
+      "- **Line**: 3\u20135 px ink ribbons with \u00b140 % width breathing and 12\u201325 % breaks. Characters ~4 px, props 3\u20134.5 px, walls in plans thicker and broken. Hands: one outline around the union of palm and fingers, thin finger separations.",
+      "- **Shading**: one flat darker plane clipped inside a shape, never a gradient. Drop shadows are a copy of the shape offset down-right in a paper shade at ~50 %.",
+      "- **Ornaments**: 4-point atomic sparkles, 8\u201318-point starbursts, sunburst rays (~30 wedges, semi-transparent), boomerang and kidney shapes, polka dots."
+    ]
+  },
+  {
+    "style": "news-package",
+    "sha256": "f6249a97d12ad6a71d11741f625a6b7d9cc6fb25006385b23f394ea56fb6610d",
+    "headings": [
+      "# Broadcast News Package \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Frame and layout (1920\u00d71080)",
+      "## 3. Package parts (specs)",
+      "## 4. Colour",
+      "## 5. Type",
+      "## 6. Picture layer and grade",
+      "## 7. Editing grammar",
+      "## 8. Sound palette",
+      "## 9. Native moves",
+      "## 10. Material",
+      "## 11. Pitfalls",
+      "## 12. Variation space"
+    ],
+    "rules": [
+      "- Chinese: Noto Sans SC 900 (headlines, strap) / 700 (labels).",
+      "- Latin: Barlow Condensed 800 (numbers, names, the plate), 600 (secondary lines, quotes), 600 italic (the end-card English title).",
+      "- Mono: IBM Plex Mono 500 for datelines, sources, axis labels, all caps with 1\u20134 px tracking.",
+      "- All OFL, subset from Google Fonts by `demo/tools/fonts.sh` (the character list is read from `main.js`; delete `fonts/*.woff2` after a text change). No handwriting faces in this style."
+    ]
+  },
+  {
+    "style": "newsreel",
+    "sha256": "ec7cf8cef4efdc557c70f7743c5eb431d20e219e43a0a3dc2cbea1cfeea41e8d",
+    "headings": [
+      "# 1920s Newsreel \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Editing grammar",
+      "## 6. Camera on stills and archive",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Material: where it comes from",
+      "## 10. Pitfalls",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Archive in a projected gate**: 1.37:1 picture, full height, rounded corners, black outside; everything inside it shares one silver grade, gate weave, flicker, scratches and dust.",
+      "- **News objects** do the explaining: newspapers, magazine pages, books, telegrams, maps, records. They are filmed (spun, slammed, panned, turned, underlined), never typeset as slides.",
+      "- **A voice talks over everything**: short exclamations, half joking, never a lecture.",
+      "- **Music is a band, and it edits**: cuts land on the band's beats; the band stops dead to let a line land; a period record can take over the soundtrack."
+    ]
+  },
+  {
+    "style": "one-line",
+    "sha256": "69d26cb06f48ab6b03c12a76c2390d0945cdaddc38bc109b7d5e292b9af1399b",
+    "headings": [
+      "# One-line Drawing \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **One continuous line** on warm white paper. The pen never lifts: in code the whole film can literally be one point array, from the first touch of the nib to the last frame.",
+      "- **Everything is a line**: characters, places, objects, even time. No fills, no shading, no second line weight, no background art.",
+      "- **We watch the line being drawn**: the camera follows the nib with a little lag and anticipation.",
+      "- Besides ink there is only the paper and a soft **shadow of the pen** (the real world above the paper). One accent colour at most, used once."
+    ]
+  },
+  {
+    "style": "paper-lantern",
+    "sha256": "e8be26d64f33229859e284a33d77969f9a4468b7bf1b478ca8fa924c7dd9f27d",
+    "headings": [
+      "# Paper-cut Lightbox \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Units in metres, y up.** Layers from z \u2248 \u22120.14 (sky) to 0 (front); camera at z \u2248 0.2\u20130.56, fov ~26\u00b0. In box framing, sheets are **never larger than the cavity**. In full-bleed shots that travel, a layer may be a long strip that scrolls past, and the sky panel moves with the camera so its edge never shows.",
+      "- **A layer** is a Canvas2D drawing in metre space mapped to a plane; cut-outs are `destination-out` holes. Finish on every sheet: fibre grain (`source-atop`), a warm top rim and a dark bottom shade, each shifted a few px.",
+      "- **Backlight shader**: `emissive += albedo \u00d7 lightCol \u00d7 trans \u00d7 lit \u00d7 falloff \u00d7 (base + cloud)`, with a Gaussian falloff around a per-shot light point and a tiled pulp-mottle texture. `trans` per layer goes from ~.9 (far) to ~.05 (front).",
+      "- **Emissive windows**: a second canvas (white = light) gated by a 0\u21921 \"switch on\" uniform; bloom makes them burn. Titles, lights and curtains in front neither cast nor receive shadows."
+    ]
+  },
+  {
+    "style": "paper-popup",
+    "sha256": "8e5c0ca430fd96b75c4d9c2af92a87c84d4d1af8cda64280a189c51279e1ee9b",
+    "headings": [
+      "# Paper Pop-up Book \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Real units** (metres): page 0.3\u20130.5 m wide, actors 3\u20135 cm, near plane a few mm, so HDRI, shadows and depth of field behave like a real macro shot.",
+      "- **Cut-paper finish**: Canvas2D art with a dark ink outline; its silhouette dilated (drawn at many angles on several rings, recoloured `source-in`) into a grey cardboard edge offset slightly down (thickness) and a wide off-white border; a shared paper grain on top (`source-atop`).",
+      "- **Drawing**: one dark-brown ink (never black), thick outline + thinner detail line, round joins; shading = one hard **crescent** (fill with shade, refill shifted with base); wobbly shapes (low-harmonic noise), never perfect geometry; simple faces.",
+      "- **Pop-up pieces**: planes with art on the front and plain paper on the back (same alpha); `alphaTest` + `alphaToCoverage`; a custom depth material with the alpha map so **the shadow is the cut-out silhouette**. Anything \"3D\" is several flat cards (front/back layers, triangles hinged on a keel)."
+    ]
+  },
+  {
+    "style": "papercut-red",
+    "sha256": "65e317d83335e0cb34696b643e31ad9e46fb0bb93fd748c2e21d74358aea61ec",
+    "headings": [
+      "# Red Paper-cut \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Paper grain:** a neutral-grey texture in `soft-light` inside each piece (dye mottling, fibres, specks), then the piece's alpha restored with `destination-in`, so holes stay holes.",
+      "- **Cut edge:** every silhouette is a polyline with a slight low-frequency wobble (hand-cut), a 1 px light rim upper-left and a dark rim lower-right (the cut face). Architecture and machines use straight segments + wobble, never smoothing.",
+      "- **Paper thickness:** each piece casts a tight soft shadow on the layer below; stacked folded paper shows 2\u20136 offset darker edges.",
+      "- **Figures: red block + yin lines.** Every figure piece gets an **inset contour** (a thin slit a few units inside the outline): the classic double outline, which also separates red-on-red overlaps (an arm over a coat)."
+    ]
+  },
+  {
+    "style": "pictogram-motion",
+    "sha256": "52f0119e13e2d98ee9d2dbf5ea8b9dc84ffb309746fd93afc01eb07d1e2c2689",
+    "headings": [
+      "# Pictogram Motion \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Flat Canvas2D**, rendered clean; grain only at mux time. **One square grid** (cell \u2248 1/6 of the frame height) rules bands, transitions and walls.",
+      "- **Pattern model**: fill with a mid-dark tone; on grid nodes randomly place cell-radius discs in random tones and discs-with-inner-discs; then a fraction of cells get one motif from a library of generic geometry (quarter-discs, fish-scale waves, dot and triangle scales, concentric arcs, sun wheels, checkers, crescents\u2026), rotated by multiples of 90\u00b0; never mascots, landmarks or logos. Draw it wider than the screen so any row can shift one cell.",
+      "- **Pictogram model**: one stroke weight family per film (round caps), solid fills, at most two tones per pictogram (a darker gore, a far side). Objects keep their silhouette at icon size; anything that cannot be read as a sign at 60 px is cut.",
+      "- **Figure model** (optional): unit = body height, origin at the hip; draw far limbs (mixed ~40 % toward the background), torso, near limbs, head. A second person sits behind, mixed further (~60 %). People can also appear only through their traces (footprints, a queue of feet)."
+    ]
+  },
+  {
+    "style": "pixel-rpg",
+    "sha256": "f79fac0d9aed03d2a69f17a50b37adca2da84156b3fa525537761c507bcaea8e",
+    "headings": [
+      "# 16-bit Pixel RPG \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **320\u00d7180 native pixels**, scaled \u00d76 nearest-neighbour to 1080p; everything, text included, lives in the framebuffer.",
+      "- **A limited, indexed palette**; gradients are **ordered dither**, never blends.",
+      "- **Sprites** around 20\u201334 px tall animating in a handful of frames; faces act in **portraits**.",
+      "- **Story told the way a game tells it**: dialog boxes with portraits, menus, status bars, battle messages, save files, item fanfares."
+    ]
+  },
+  {
+    "style": "printed-long-take",
+    "sha256": "fafef88a98f73d73b578ef8591222d2287ac1b921f594fc08e5588a97d077b2d",
+    "headings": [
+      "# Printed Long Take \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "### Narration & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Only ink, paper and one red.** Every value is either ink or paper; grey exists only as a density of lines. One red is reserved for one small subject. A warm yellow may appear for the sun, a lamp or one material, never as a second accent.",
+      "- **Tone is cut, not shaded.** Shadow sides of hills carry knife lines that run down the fall line; skies are parallel horizontal cuts whose width makes the light; snow is paper with a few drift strokes; water is ink with cut ripples.",
+      "- **Real depth, flat marks.** The scene is built in 3D (terrain, rivers, thousands of trees, buildings), but every surface is drawn with flat marks fixed in world space, so the layers slide past each other like a printed diorama.",
+      "- **At least three layers in every held frame:** sky / a mountain or forest band / a middle ground of fields, water or snow / a foreground of branches, fences or posts. Ink and paper roughly half and half. A pass through steam or a structure is exempt for its half second; an opening inside one material (a cloud, the dark) finds its layers in that material (near wisps rushing past, the body, a gap to what lies beyond) within about a second."
+    ]
+  },
+  {
+    "style": "risograph",
+    "sha256": "c3d85c91a81b0afde091d964482749482adc66c12730afe124708f7b18b331a6",
+    "headings": [
+      "# Risograph Print \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **A tiny palette**: 2\u20133 spot inks on warm off-white paper.",
+      "- **Overprint mixing**: inks multiply, so two inks make a third colour and all three approach black; a tint of one ink over a solid of another gives the brightest mixes.",
+      "- **Misregistration**: every plate lands a few pixels off; edges show slivers of paper or a coloured halo.",
+      "- **Halftone dots** for mid-tones, each plate on its own screen angle; **imperfect ink**: pinholes in solids, streaks along the feed direction, blotchy density."
+    ]
+  },
+  {
+    "style": "rubber-hose",
+    "sha256": "bf850f9cd22e68b2125fed00d1b9804e91479620b44420ba7ec50e570e472a94",
+    "headings": [
+      "# 1930s Rubber Hose Cartoon \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Frame**: 1920\u00d71080 output with a **4:3 gate** (1440\u00d71080 centred, black pillarbox), gate corners rounded (r \u2248 28 px), soft inner shadow on the gate edge.",
+      "- **Characters**: flat fills, one hard-edged form-shadow band (light grey) on the side away from an upper-left light, ink outline **constant in screen space** at any zoom (transform points first, then stroke; ~6 px at 1080p), light **line boil** (\u00b11.2 px, 3 drawings cycling at 12 fps).",
+      "- **Anatomy kit**:",
+      "- **Object characters**: the face sits on the body; a **secondary feature carries the mood** (steam, a flame, a lampshade tilt, a spring). A box-shaped object is a real projected 3D shape seen slightly from above, the face mapped onto its front."
+    ]
+  },
+  {
+    "style": "satellite-briefing",
+    "sha256": "d8d4856407fba8394c2cd9102a4aa23525db0171275a85b1aeeab2f0597e26a8",
+    "headings": [
+      "# Satellite Briefing \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **The ground is a photograph**: real, licence-clean, georeferenced satellite or aerial imagery of the actual place. Nothing on the ground is drawn, stylised or generated.",
+      "- **Two layers, two truths**: the imagery is what the satellite saw; the hairlines are what the analyst measured. Marks are thin, white, sparse, and sit on real coordinates.",
+      "- **The grade moves with the story**: orbit in true colour, the analysis layer in grey, colour back only where the story turns.",
+      "- **Scale is the camera**: one zoom from orbit to the ground built from nested plates, with an altitude readout and a scale bar from the same camera."
+    ]
+  },
+  {
+    "style": "scifi-toon",
+    "sha256": "9a720a57ce50dc554e9237e698a979cdf7311527e6e6a0dad803278dfe8ad2ce",
+    "headings": [
+      "# Sci-Fi Sitcom Toon \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- Never reproduce any existing show's characters, silhouettes or colour combos (e.g. a spiky-blue-haired old man in a lab coat + a kid in a yellow shirt), names, catchphrases, burp gags, logos, or the look of any existing portal gun.",
+      "- Invent your own cast, props and portal device. Never write the source show's name in the film or docs; one line \"inspired by adult-swim-era sci-fi sitcom cartoons\" is enough.",
+      "- **Line**: near-black (a slightly purple black reads best), ~7 px for characters and props, 4\u20136 px for background detail, round joins. **Line width is constant in screen space**: close-ups are \"redrawn\" at the same weight, never scaled up (transform points to screen, then stroke with an identity transform).",
+      "- **Line boil**: resample every outline in screen space (~7 px steps) and displace along the normal with low-frequency noise, amplitude ~1.7 px; cycle **3 boil drawings at 12 fps**. Everything boils, including held poses and backgrounds: a still frame is never dead."
+    ]
+  },
+  {
+    "style": "shadow-puppet",
+    "sha256": "8be075a8262d5a3deea9b05684d8a9abdc1e54c0d90649bf14609ecb4106c3af",
+    "headings": [
+      "# Shadow Puppetry \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- `hideTransmission`: a 2D canvas that starts **white**; every piece is drawn with `multiply`. Holes stay white, overlaps darken by themselves.",
+      "- `lampLight`: per lamp a broad lobe plus a tight hotspot (~6 : 1), each flickering independently (a few % of ~7 Hz value noise plus a faster sine). Warm light, never white.",
+      "- `tonemap = 1 \u2212 exp(\u2212hdr)`, exposure \u221d `1/\u221a(lamps lit)`: more lamps bleach the frame but keep it readable. Lamp count is a dial the story can turn.",
+      "- **Cloth**: procedural weave (sin \u00d7 sin, noise-warped), fibre speckle, low-frequency density blotches, darker edges at the frame. **Post**: warm-tinted bloom, a **warm vignette** (toward brown, never grey), slight saturation, soft S-curve, light grain; heat haze only when the story burns."
+    ]
+  },
+  {
+    "style": "silent-film",
+    "sha256": "44633a4edd4ec6b84be809bd48b38503a75a71531112b3d28a52f27135012b20",
+    "headings": [
+      "# 1920s Silent Film \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **A 4:3 print in a gate between theatre curtains**; the sides of the 16:9 frame are the picture house.",
+      "- **An ink drawing with washed greys and hatching**, printed on silver stock that flickers, weaves, scratches and burns at the edges.",
+      "- **Nobody speaks.** Beats are told by **action in wide shots** and by **intertitle cards**.",
+      "- **The only sound is a cinema instrument** (piano, organ) and the projector in the booth."
+    ]
+  },
+  {
+    "style": "silkscreen-poster",
+    "sha256": "f1c86a9f0cbe735de9fb1421d33ab44465122158e6c45a4786c98852ea9952b1",
+    "headings": [
+      "# Silkscreen Travel Poster \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Registration**: every layer offset 1\u20133 px at 1080p; a knocked-out shape leaves a crescent of bare paper.",
+      "- **Overprint edge**: a faint multiply ghost ~2 u off under each ink, leaving a darker sliver where ink laps over ink.",
+      "- **Ink thickness**: a light rim top-left, a dark rim bottom-right, fills only; fresh ink has a wet sheen that fades within a second.",
+      "- **Paper**: cream stock with fibres; mottle and pinholes in paper colour, visible only on ink."
+    ]
+  },
+  {
+    "style": "spy-titles",
+    "sha256": "ea6e9e9073af43ef0bb860e368f60b16ec32a91668386115a142907d92cb1f75",
+    "headings": [
+      "# 60s Spy Title Sequence \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Flat, opaque inks on paper**: four colours, no gradients.",
+      "- **Hand-cut edges** on every shape; pieces layered with cut gaps and small paper shadows.",
+      "- **Abstraction down to silhouettes**: figures in profile, all acting in outline and timing.",
+      "- **Typography is the picture's structure**: credits are architecture, props, vehicles."
+    ]
+  },
+  {
+    "style": "stained-glass",
+    "sha256": "0f6551bd109a4127404068aa1e75f18f16b58c80b486c23480b3d193e597b060",
+    "headings": [
+      "# Stained Glass \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Cut pieces of coloured glass in dark lead cames**, faces and folds **painted in brown grisaille**.",
+      "- Glass has no light of its own: it **glows only when the sun is behind it** and throws a soft coloured copy onto the stone floor; unlit, it is dark and milky.",
+      "- Figures move **piece by piece**, rigid and stepped.",
+      "- The room is always there: stone, a splayed embrasure, iron saddle bars, a floor that catches light."
+    ]
+  },
+  {
+    "style": "swiss-motion",
+    "sha256": "14ddeb6dc495e691a220497069a2ee4827d820f9ee7a3173de5846489ef41f57",
+    "headings": [
+      "# Swiss Motion Graphics \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Pure 2D graphic design animated on a grid**: flat paper, black type and bars, a very light grey and **one** saturated signal colour.",
+      "- **Every element snaps to the grid, every move lands on a beat, nothing bounces.**",
+      "- **Rigor with one exception**: the whole frame obeys a system, so the one element that doesn't becomes a character.",
+      "- **Extreme scale contrast**: a giant numeral next to tiny technical notes."
+    ]
+  },
+  {
+    "style": "teardown",
+    "sha256": "90df05a02a3d33add58e0dd99bef19ca20ea16b10390b3c2350d8483106922ee",
+    "headings": [
+      "# Exploded Teardown \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **the object is real and exact**: geometry, positions and counts come from the product's own files (STEP, KiCad, BOM, assembly guide). Nothing is eyeballed that a file can give;",
+      "- **it is shown apart**: layers float on one axis with even, readable gaps, each still oriented as it sits in the product;",
+      "- **it is photographed, not drawn**: physically based materials, a studio key light, a cool rim, an HDRI reflection, soft contact shadow on an invisible floor;",
+      "- **the numbers live on the object**: thin leader lines from a dot on the part, dimension lines with ticks drawn in the scene's own perspective, never a table beside it;"
+    ]
+  },
+  {
+    "style": "telestrator",
+    "sha256": "7289027728dc5e1b6d095b7c7bc7806790bb579934c81682265c0c1b4897a3d0",
+    "headings": [
+      "# Sports Telestrator \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Frame and layout (1920\u00d71080)",
+      "## 3. Editing grammar",
+      "## 4. Colour identity (the one rule that matters)",
+      "## 5. Type",
+      "## 6. Motion and drawing",
+      "## 7. Grade and image quality",
+      "## 8. Sound palette",
+      "## 9. Native moves (and how the code does them)",
+      "## 10. Material",
+      "## 11. Engine",
+      "## 12. Pitfalls",
+      "## 13. Variation space"
+    ],
+    "rules": [
+      "- **Full-frame footage** most of the time. The packaging lives in the corners:",
+      "- **Labels** (black card, coloured left bar, Chinese line + small spaced English line) sit in empty grass or crowd, never over the action they describe.",
+      "- **Subtitle bar** bottom, centred at x 880 (its right edge stays left of the score bar), y 938\u20131044.",
+      "- **Split screen**: two 960\u00d71080 vertical windows, each a 960-px-wide slice of a 1920 frame at 1:1 (no extra scaling), a 6 px yellow divider between them, a camera label at each window's top left (A MAIN CAMERA / B HIGH REVERSE). The slices are chosen so the broadcaster's logo and URL fall outside them."
+    ]
+  },
+  {
+    "style": "tilt-shift",
+    "sha256": "131ae50c6bddd30922638cbd5f2fae5c047223360a3f6924b074b0db525a5c63",
+    "headings": [
+      "# Tilt-Shift Miniature \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Vantage**: always high. Oblique views at roughly 45\u201355\u00b0 pitch from 100\u2013200 m with a moderately long lens (~27\u201330\u00b0 vertical FOV); straight top-down for the most \"board game\" look. Real tilt-shift is never shot from street level, except for a deliberate intimate moment: a true medium close-up at the actors' height, a blurred foreground object framing sharp actors who fill ~1/4\u20131/3 of the frame height (a long lens from high up keeps them as dots).",
+      "- **Blur band** (`demo/post.js`): physical depth of field mixed with a screen-space band. CoC in pixels = `mix(aper\u00b7(1/focus \u2212 1/z), sign(dy)\u00b7amp\u00b7(max(0,|dy|\u2212w)/0.5)^1.2, mix)`, clamped (~30 px). Put the band on the subject; when the subject moves, project it to screen every frame and slide the band there. Narrow the band for intimacy. Gather at output resolution after a 2\u00d7 supersampled render, with many spiral taps and per-pixel rotation; far samples must not bleed onto nearer sharp ones.",
+      "- **Grade**: neutral tone mapping, strong saturation boost, soft added contrast, slightly warm highlights, a vignette. Lower saturation at night.",
+      "- **Light**: a hard sun with sharp shadows (a big shadow map fitted to each shot), a low hemisphere fill with warm ground bounce so shadows stay blue but not murky, a sky-gradient environment map for glass and paint. **Cheat the sun azimuth per shot**: each time-lapse clip is its own shot, so front-light the facades you see; one fixed sun leaves half a film backlit and grey."
+    ]
+  },
+  {
+    "style": "transit-map",
+    "sha256": "e6c62bc75071c86b67c30def595e919910d86245504c8c09882d151a3c719d1c",
+    "headings": [
+      "# Transit Map \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Eight directions only.** Every line segment, river edge and coastline is horizontal, vertical or at 45\u00b0; every corner is one fillet radius. A line never wiggles.",
+      "- **Growth is drawing.** A line exists as far as its pen tip has travelled; stops light when the tip passes; an interchange appears only when the second line actually arrives, and it lands with weight.",
+      "- **Ink on a sheet.** The map is printed on paper with tooth and fibres, lit by one raking light, and the sheet lies on a dark table. The camera sees it as an object: in perspective, with depth of field, and with its edge in wide or low shots.",
+      "- **Words are printed.** Station names, callouts and cartouches are ink on the sheet; running numbers live on one small mechanical counter. Every text line holds one language."
+    ]
+  },
+  {
+    "style": "ukiyoe",
+    "sha256": "218c48a204f9034d1c2fb7f11698b4834f1faee1ca68c9e336f3d6ab992ff2e4",
+    "headings": [
+      "# Ukiyo-e \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Paper** is always visible: warm washi, long fibres, slight edge ageing.",
+      "- **Each colour is its own block**, slightly **out of register** (1.5\u20132.5 px) with the key line.",
+      "- Large colour areas show **woodgrain** and **baren rubbing** (uneven ink density, circular streaks) and fine **goma-zuri** specks.",
+      "- **Bokashi**, hand-wiped gradients, in skies and water."
+    ]
+  },
+  {
+    "style": "urban-sketch",
+    "sha256": "2baf1a19f31b06e55d66d62e4c3449c7a2686c689190976f3e3d0cbdce2faa9a",
+    "headings": [
+      "# Urban Sketch \u00b7 Pen & Wash \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Paper**: two octaves of fbm mottling (a few %), a tooth tile multiplied over everything, figures included.",
+      "- **Ink**: ~96 % coverage; world line width thinner far, thicker near (e.g. 1.3\u20133.4 px); wobble ~1 px; overshoot 3\u20138 px; a third to half of long strokes get one small gap. Strokes are baked with their **draw time per pixel**, so the shader plays back stroke order.",
+      "- **Wash**: 2\u20133 rough-edged layers, multiply, alpha ~0.4\u20130.65, offset from the line by about one line width, a dried edge at 30\u201340 %; granulation = pigment \u00d7 (0.82 + 0.36 \u00b7 fbm).",
+      "- **Colour arrival field**: every pixel has a time at which colour reaches it. The wash is revealed through it with a ragged wet front (darkened band just behind the front) and noisy edges. Figures bloom from a point with a noisy circular clip."
+    ]
+  },
+  {
+    "style": "visual-investigation",
+    "sha256": "9b39ebaa00c3d77ae544d7453e99b79caf4dfaae1d37798b1f995a5578aac30b",
+    "headings": [
+      "# Visual Investigation \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Shot & layout grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves (and how to code them)",
+      "## 9. Pitfalls",
+      "## 10. Footage (\u7d20\u6750)",
+      "## 11. Facts",
+      "## 12. Engine",
+      "## 13. Variation space"
+    ],
+    "rules": [
+      "- **Three kinds of source at least**: moving image (newsreel, CCTV, phone video, launch camera), documents (testimony, memo, telegram/teletype, report page), photographs. Add sound (original commentary, radio, recordings), data (weather, telemetry, counts) and maps whenever they exist.",
+      "- **Documents**: a scanned page is shown as a strip or a page, never re-drawn; only the decisive line is highlighted (red, `multiply`, \u03b1 \u2248 0.6, wiped left to right). Text that exists only as a transcription (a report, radiograms) is re-typeset by code and labelled as a transcription.",
+      "- **Archival picture pipeline** (pre-1950 film, max \u2248 2.5\u00d7): deinterlace (`bwdif=0`) \u2192 crop borders \u2192 deblock (`hqdn3d=2:2:3:3`) \u2192 lanczos upscale \u2192 light unsharp (`5:5:0.5`) \u2192 greyscale; one grain for everything. Modern footage: \u2264 1.5\u00d7. Never colourised or \"restored\" copies.",
+      "- **One grade** (canvas `ctx.filter`): footage and photos `grayscale(1) contrast(1.22) brightness(0.94)`; paper `grayscale(1) contrast(1.05) brightness(0.86)` (white pages pressed to light grey); maps greyscale, inverted, `brightness(.62)` so they read as dark line drawings."
+    ]
+  },
+  {
+    "style": "watercolor",
+    "sha256": "662d57568408a7c82ef8f64980ca85798b8bb239df3dc3a6715283d7f4555ef0",
+    "headings": [
+      "# Watercolor Brush \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **One sheet of warm, fibrous paper** under everything; it is also the eraser (paper-coloured mist washes things away).",
+      "- **Everything is individual brush strokes**: a variable-width ribbon at partial opacity plus a few thin **bristle tracks** that break into dashes (flying white). Strokes overlap and darken where they cross, like transparent pigment. No vector outlines; a darker edge stroke along a form is the only \"line\".",
+      "- **Things paint themselves in**, stroke by stroke, structure before detail (trunk \u2192 branches \u2192 leaves; outline wash \u2192 shadow \u2192 accent).",
+      "- **An annotation layer** in a hand the painter would write with: labels with pen leader lines, a small measured value, a quiet title."
+    ]
+  },
+  {
+    "style": "white-model",
+    "sha256": "02b6423a69ac5a30322997ec9523bd6b6f776b7c8cf14f249eeb996b9d21e2c2",
+    "headings": [
+      "# Projection on White Model \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **The model is real geometry of a real place**: building footprints and heights from open data (\u00a72), extruded at a stated scale (1:1000, 1:2000\u2026). Nothing on the model is invented or \"representative\", and no generated image ever stands in for the place.",
+      "- **The model is white; data is light.** Colour is never painted into the material: it is projected, so it brightens surfaces that face the projector, fades on walls turned away, stops at the edge of the throw and reaches a little onto the plinth.",
+      "- **Layers arrive one at a time**, each with its own gesture of light (a wash, a pop-on, a rising level, a moving sun), and each answers the question the last one raised.",
+      "- **A physical room**: house lights, a projector that strikes and switches, a plinth, darkness around it. Lights out is where the data starts; lights up is where it ends."
+    ]
+  },
+  {
+    "style": "whiteboard",
+    "sha256": "19f66326257bcafb8aca18af3e209d1fee31d9e23902ce1708bbb606cbf4b718",
+    "headings": [
+      "# Whiteboard Explainer \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **One physical whiteboard.** Everything the viewer learns is drawn in dry-erase marker in front of them, in real handwriting order.",
+      "- **The board is a map**: each idea lives in its own region; the camera travels between regions, often led by the pen. Distance on the board = distance in the argument.",
+      "- **Real marker, not animated text**: ink pools where the nib lands, dry streaks and speckle, strokes overshoot and don't quite close, ghosts of old lessons remain, a glossy sheen drifts slower than the board, and **every stroke makes a sound**.",
+      "- **No hands.** Markers float with a real cast shadow that grows when they lift, park outside the frame between phrases and fly back in. Magnets and the eraser move on their own. Never draw a hand, an arm or a cursor."
+    ]
+  },
+  {
+    "style": "woodcut",
+    "sha256": "b96fda6eeac038137310cc0766d979c8d8a5f3ff6acd87bada5aa50d5136a6a0",
+    "headings": [
+      "# Woodcut Print \u2014 Style Prompt",
+      "## 1. Essence, and what it is not",
+      "## 2. Materials & rendering",
+      "## 3. Colour logic",
+      "## 4. Type & subtitles",
+      "## 5. Motion quality",
+      "## 6. Camera grammar",
+      "## 7. Sound palette",
+      "## 8. Native moves",
+      "## 9. Pitfalls of the medium",
+      "## 10. Engine",
+      "## 11. Variation space"
+    ],
+    "rules": [
+      "- **Print frame**: the printed image area sits inside a paper margin; the wider bottom margin holds captions. The image edge is the block edge: ragged ink, never a clean rectangle.",
+      "- **Knife classes** (widths in 1080p pixels at 1\u00d7 camera):",
+      "- **Hatching (Dor\u00e9 grammar in wood)**: line **direction follows form** (a round object is wrapped in arcs, slopes follow the fall line, fire and light radiate, cloth follows its folds). **Width follows tone**: bright = wide cuts almost merging into white, mid-tone = thin cuts, dark = no cuts. Far = dense and fine, near = sparse and coarse. Every line is a separate cut (30\u2013160 px, blunt entry, tapered exit, chipped edge), never a continuous machine line.",
+      "- **Figures**: black silhouette + white knife halo + grazing-light hatching on the lit edge only (light z \u2248 0.2, so flat areas stay black). **Skin carved white, features left black** (the wordless-novel rule)."
+    ]
+  }
+]
