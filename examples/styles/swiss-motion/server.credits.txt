@@ -1,0 +1,4 @@
+Style adapted from Lemomo/LemoLab, https://github.com/lemomo-ai/lemo-opuscar
+MIT code/docs, CC BY 4.0 adapted style knowledge. No upstream demo media.
+Original procedural music; system sans-serif font.
+Voice: none (captions).

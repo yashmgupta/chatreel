@@ -1,0 +1,102 @@
+[
+  {
+    "mode": "offline",
+    "style": "swiss-motion",
+    "duration": 5.0,
+    "frames": 120,
+    "video_codec": "h264",
+    "integrated_lufs": -13.7,
+    "black_intervals": 0,
+    "representative_frames": "passed nonblank/finite/motion checks"
+  },
+  {
+    "mode": "offline",
+    "style": "blueprint",
+    "duration": 5.0,
+    "frames": 120,
+    "video_codec": "h264",
+    "integrated_lufs": -13.7,
+    "black_intervals": 0,
+    "representative_frames": "passed nonblank/finite/motion checks"
+  },
+  {
+    "mode": "offline",
+    "style": "chalkboard",
+    "duration": 5.0,
+    "frames": 120,
+    "video_codec": "h264",
+    "integrated_lufs": -14.5,
+    "black_intervals": 0,
+    "representative_frames": "passed nonblank/finite/motion checks"
+  },
+  {
+    "mode": "offline",
+    "style": "woodcut",
+    "duration": 5.0,
+    "frames": 120,
+    "video_codec": "h264",
+    "integrated_lufs": -13.9,
+    "black_intervals": 0,
+    "representative_frames": "passed nonblank/finite/motion checks"
+  },
+  {
+    "mode": "offline",
+    "style": "pixel-rpg",
+    "duration": 5.0,
+    "frames": 120,
+    "video_codec": "h264",
+    "integrated_lufs": -13.6,
+    "black_intervals": 0,
+    "representative_frames": "passed nonblank/finite/motion checks"
+  },
+  {
+    "mode": "server",
+    "style": "swiss-motion",
+    "duration": 5.0,
+    "frames": 120,
+    "video_codec": "h264",
+    "integrated_lufs": -13.7,
+    "black_intervals": 0,
+    "representative_frames": "passed nonblank/finite/motion checks"
+  },
+  {
+    "mode": "server",
+    "style": "blueprint",
+    "duration": 5.0,
+    "frames": 120,
+    "video_codec": "h264",
+    "integrated_lufs": -15.5,
+    "black_intervals": 0,
+    "representative_frames": "passed nonblank/finite/motion checks"
+  },
+  {
+    "mode": "server",
+    "style": "chalkboard",
+    "duration": 5.0,
+    "frames": 120,
+    "video_codec": "h264",
+    "integrated_lufs": -14.5,
+    "black_intervals": 0,
+    "representative_frames": "passed nonblank/finite/motion checks"
+  },
+  {
+    "mode": "server",
+    "style": "woodcut",
+    "duration": 5.0,
+    "frames": 120,
+    "video_codec": "h264",
+    "integrated_lufs": -13.9,
+    "black_intervals": 0,
+    "representative_frames": "passed nonblank/finite/motion checks"
+  },
+  {
+    "mode": "server",
+    "style": "pixel-rpg",
+    "duration": 5.0,
+    "frames": 120,
+    "video_codec": "h264",
+    "integrated_lufs": -13.6,
+    "black_intervals": 0,
+    "representative_frames": "passed nonblank/finite/motion checks"
+  }
+]

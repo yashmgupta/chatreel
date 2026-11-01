@@ -1,0 +1,309 @@
+openapi: 3.1.0
+info:
+  title: Chatreel
+  version: 1.0.0
+  description: Code-rendered short films. Confirm storyboard before submission. Films
+    and narration are sent to this service. Results retained 24 hours; signed downloads
+    expire in 15 minutes.
+servers:
+- url: https://render.example.com
+  description: Replace with your deployed HTTPS origin
+security:
+- ApiKey: []
+paths:
+  /styles:
+    get:
+      operationId: getStyles
+      summary: List supported rendering styles and limits
+      responses:
+        '200':
+          description: Style catalog
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  styles:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        modes:
+                          type: array
+                          items:
+                            type: string
+                  limits:
+                    type: object
+                  voice:
+                    type: string
+                  webgl:
+                    type: string
+  /render:
+    post:
+      operationId: submitFilm
+      summary: Queue a confirmed storyboard for rendering
+      x-openai-isConsequential: true
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Film'
+      responses:
+        '202':
+          description: Queued
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Job'
+        '422':
+          description: Invalid film or resource budget
+        '429':
+          description: Queue full
+        '413':
+          description: Body too large
+        '401':
+          description: Missing API key
+        '503':
+          description: Storage full
+  /jobs/{job_id}:
+    get:
+      operationId: getJob
+      summary: Poll render status and get completed MP4 URL
+      parameters:
+      - name: job_id
+        in: path
+        required: true
+        schema:
+          type: string
+          pattern: ^[0-9a-f]{32}$
+      responses:
+        '200':
+          description: Current job status
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Job'
+        '404':
+          description: Missing or expired job
+  /jobs/{job_id}/download:
+    get:
+      operationId: downloadFilm
+      summary: Download completed MP4 with API key; chat may use signed download_url
+        instead
+      parameters:
+      - name: job_id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: MP4
+          content:
+            video/mp4:
+              schema:
+                type: string
+                format: binary
+        '409':
+          description: Not complete
+components:
+  securitySchemes:
+    ApiKey:
+      type: apiKey
+      in: header
+      name: X-API-Key
+  schemas:
+    Film:
+      title: Chatreel Film
+      type: object
+      additionalProperties: false
+      required:
+      - title
+      - style
+      - scenes
+      properties:
+        title:
+          type: string
+          minLength: 1
+          maxLength: 80
+        style:
+          enum:
+          - swiss-motion
+          - blueprint
+          - chalkboard
+          - woodcut
+          - pixel-rpg
+        width:
+          type: integer
+          minimum: 320
+          maximum: 1280
+          multipleOf: 2
+          default: 640
+        height:
+          type: integer
+          minimum: 180
+          maximum: 720
+          multipleOf: 2
+          default: 360
+        fps:
+          type: integer
+          minimum: 8
+          maximum: 30
+          default: 24
+        seed:
+          type: integer
+          minimum: 0
+          maximum: 2147483647
+          default: 7
+        voice:
+          enum:
+          - subtitles
+          - tts
+          default: subtitles
+        webgl:
+          type: boolean
+          default: false
+        scenes:
+          type: array
+          minItems: 1
+          maxItems: 20
+          items:
+            type: object
+            additionalProperties: false
+            required:
+            - duration
+            - title
+            - objects
+            properties:
+              duration:
+                type: number
+                minimum: 1
+                maximum: 30
+              title:
+                type: string
+                maxLength: 60
+              narration:
+                type: string
+                maxLength: 240
+                default: ''
+              camera:
+                enum:
+                - locked
+                - push
+                - pan
+                default: locked
+              objects:
+                type: array
+                minItems: 1
+                maxItems: 24
+                items:
+                  type: object
+                  additionalProperties: false
+                  required:
+                  - shape
+                  - x
+                  - y
+                  properties:
+                    shape:
+                      enum:
+                      - circle
+                      - box
+                      - triangle
+                      - person
+                    x:
+                      type: number
+                      minimum: 0.1
+                      maximum: 0.9
+                    y:
+                      type: number
+                      minimum: 0.25
+                      maximum: 0.65
+                    size:
+                      type: number
+                      minimum: 0.03
+                      maximum: 0.18
+                      default: 0.1
+                    motion:
+                      enum:
+                      - still
+                      - drift
+                      - pulse
+                      default: still
+                    accent:
+                      type: boolean
+                      default: false
+        music:
+          type: object
+          additionalProperties: false
+          properties:
+            enabled:
+              type: boolean
+              default: true
+            bpm:
+              type: number
+              minimum: 40
+              maximum: 180
+              default: 100
+            gain:
+              type: number
+              minimum: 0
+              maximum: 0.5
+              default: 0.15
+            cues:
+              type: array
+              maxItems: 60
+              items:
+                type: object
+                additionalProperties: false
+                required:
+                - time
+                - note
+                properties:
+                  time:
+                    type: number
+                    minimum: 0
+                    maximum: 120
+                  note:
+                    type: integer
+                    minimum: 36
+                    maximum: 96
+                  duration:
+                    type: number
+                    minimum: 0.05
+                    maximum: 4
+                    default: 0.4
+    Job:
+      type: object
+      required:
+      - id
+      - status
+      properties:
+        id:
+          type: string
+        status:
+          type: string
+          enum:
+          - queued
+          - running
+          - completed
+          - failed
+        poll_after_seconds:
+          type: integer
+        error:
+          type:
+          - string
+          - 'null'
+        download_url:
+          type: string
+          format: uri
+        download_expires_at:
+          type: integer
+        duration:
+          type: number
+        frames:
+          type: integer
+        backend:
+          type: string

@@ -1,0 +1,4 @@
+# Install server/requirements.txt first for integration tests.
+httpx==0.28.1
+PyYAML==6.0.2
+jsonschema==4.23.0

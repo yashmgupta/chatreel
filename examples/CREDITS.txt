@@ -1,0 +1,4 @@
+Style interpretation adapted from Lemomo/LemoLab: https://github.com/lemomo-ai/lemo-opuscar
+MIT code/docs; CC BY 4.0 style adaptations. New procedural graphics and original synthesized score.
+System font: DejaVu or Liberation when available (their own licenses). No demo media used.
+Voice: none (subtitles).

@@ -1,0 +1,45 @@
+{
+  "title": "A signal finds its way",
+  "style": "chalkboard",
+  "width": 640,
+  "height": 360,
+  "fps": 24,
+  "scenes": [
+    {
+      "duration": 5,
+      "title": "One small signal",
+      "narration": "A spark becomes a path.",
+      "camera": "push",
+      "objects": [
+        {
+          "shape": "circle",
+          "x": 0.35,
+          "y": 0.46,
+          "size": 0.12,
+          "motion": "drift",
+          "accent": true
+        },
+        {
+          "shape": "box",
+          "x": 0.7,
+          "y": 0.46,
+          "size": 0.13
+        }
+      ]
+    }
+  ],
+  "music": {
+    "bpm": 100,
+    "gain": 0.15,
+    "cues": [
+      {
+        "time": 3,
+        "note": 76,
+        "duration": 0.6
+      }
+    ]
+  },
+  "seed": 7,
+  "voice": "subtitles",
+  "webgl": false
+}

@@ -1,0 +1,10 @@
+.git
+.venv
+.jobs
+artifacts
+examples
+__pycache__
+dist
+
+.env
+*.pyc
