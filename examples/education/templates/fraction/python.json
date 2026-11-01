@@ -1,0 +1,27 @@
+{
+  "title": "Three eighths",
+  "style": "violet",
+  "width": 640,
+  "height": 360,
+  "fps": 12,
+  "scenes": [
+    {
+      "template": "fraction",
+      "title": "Three eighths",
+      "duration": 5,
+      "narration": "",
+      "content": {
+        "subtitle": "Three of eight equal-area parts are selected",
+        "numerator": 3,
+        "denominator": 8
+      }
+    }
+  ],
+  "music": {
+    "gain": 0.12,
+    "bpm": 96
+  },
+  "seed": 7,
+  "voice": "subtitles",
+  "webgl": false
+}

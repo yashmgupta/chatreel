@@ -1,0 +1,41 @@
+{
+  "title": "Numbers have positions",
+  "style": "coral",
+  "width": 640,
+  "height": 360,
+  "fps": 12,
+  "scenes": [
+    {
+      "template": "number-line",
+      "title": "Numbers have positions",
+      "duration": 5,
+      "narration": "",
+      "content": {
+        "subtitle": "Equal differences have equal spacing",
+        "minimum": -5,
+        "maximum": 5,
+        "items": [
+          {
+            "label": "A",
+            "value": -3
+          },
+          {
+            "label": "B",
+            "value": 0
+          },
+          {
+            "label": "C",
+            "value": 4
+          }
+        ]
+      }
+    }
+  ],
+  "music": {
+    "gain": 0.12,
+    "bpm": 96
+  },
+  "seed": 7,
+  "voice": "subtitles",
+  "webgl": false
+}

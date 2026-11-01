@@ -1,0 +1,100 @@
+{
+  "title": "How solar electricity reaches your home",
+  "style": "studio",
+  "profile": "production",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "scenes": [
+    {
+      "template": "title",
+      "title": "Sunlight can power a home",
+      "duration": 8,
+      "narration": "Solar cells convert light energy into electrical energy.",
+      "content": {
+        "eyebrow": "ENERGY / A SHORT EXPLAINER",
+        "subtitle": "Follow the energy, one step at a time",
+        "body": "From incoming light to useful electricity.",
+        "icon": "sun"
+      }
+    },
+    {
+      "template": "solar-energy",
+      "title": "Follow the energy conversion",
+      "duration": 12,
+      "narration": "Panels produce DC electricity. An inverter converts it to AC for household use.",
+      "content": {
+        "subtitle": "A simplified grid-compatible energy flow",
+        "source": {
+          "label": "U.S. DOE \u00b7 Solar Photovoltaic Technology Basics",
+          "url": "https://www.energy.gov/eere/solar/solar-photovoltaic-technology-basics"
+        }
+      }
+    },
+    {
+      "template": "comparison",
+      "title": "DC and AC describe different behavior",
+      "duration": 16,
+      "narration": "DC maintains a direction of current. AC periodically reverses direction.",
+      "content": {
+        "subtitle": "A conceptual comparison; actual waveforms can vary",
+        "items": [
+          {
+            "label": "Direct current",
+            "detail": "The direction of current does not periodically reverse. PV panels supply DC.",
+            "icon": "panel"
+          },
+          {
+            "label": "Alternating current",
+            "detail": "Current periodically reverses direction. Grid-connected homes commonly use AC.",
+            "icon": "home"
+          }
+        ]
+      }
+    },
+    {
+      "template": "equation",
+      "title": "Power and time determine energy",
+      "duration": 9,
+      "narration": "At constant power, two kilowatts for three hours gives six kilowatt-hours.",
+      "content": {
+        "subtitle": "Illustrative constant-power calculation",
+        "expression": "power * time",
+        "variables": {
+          "power": 2,
+          "time": 3
+        },
+        "result": 6,
+        "unit": "kWh",
+        "variable_units": {
+          "power": "kW",
+          "time": "h"
+        }
+      }
+    },
+    {
+      "template": "recap",
+      "title": "The three ideas to remember",
+      "duration": 15,
+      "narration": "Light becomes DC electricity. Inverters provide AC. Energy depends on power and time.",
+      "content": {
+        "subtitle": "Simplified explanation; not an installation guide",
+        "items": [
+          {
+            "label": "Solar cells convert incoming light into electrical energy."
+          },
+          {
+            "label": "An inverter converts DC electricity into AC."
+          },
+          {
+            "label": "For constant power, energy equals power multiplied by time."
+          }
+        ]
+      }
+    }
+  ],
+  "music": {
+    "bpm": 96,
+    "gain": 0.11
+  }
+}

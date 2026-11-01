@@ -1,0 +1,496 @@
+[
+  {
+    "template": "title",
+    "text_boxes": [
+      {
+        "text": "ENERGY / A SHORT EXPLAINER",
+        "x": 52,
+        "y": 28.0,
+        "w": 324.9375,
+        "h": 24.32,
+        "size": 19
+      },
+      {
+        "text": "01",
+        "x": 1200.15625,
+        "y": 28.0,
+        "w": 27.84375,
+        "h": 25.6,
+        "size": 20
+      },
+      {
+        "text": "Sunlight can power a home",
+        "x": 52,
+        "y": 78.0,
+        "w": 754.625,
+        "h": 62.72,
+        "size": 49
+      },
+      {
+        "text": "Follow the energy, one step at a time",
+        "x": 52,
+        "y": 156.0,
+        "w": 505.015625,
+        "h": 34.56,
+        "size": 27
+      },
+      {
+        "text": "Solar cells convert light energy into electrical energy.",
+        "x": 52,
+        "y": 620.0,
+        "w": 693.59375,
+        "h": 33.28,
+        "size": 26
+      },
+      {
+        "text": "CODE-RENDERED / NO GENERATIVE MODELS",
+        "x": 52,
+        "y": 692.0,
+        "w": 359.796875,
+        "h": 20.48,
+        "size": 16
+      },
+      {
+        "text": "From incoming light to useful electricity.",
+        "x": 204.49218749999994,
+        "y": 473.0,
+        "w": 871.015625,
+        "h": 48.64,
+        "size": 38
+      }
+    ],
+    "design_size": [
+      1280,
+      720
+    ],
+    "recommended_duration": 7.5,
+    "reading_review": "sufficient by heuristic"
+  },
+  {
+    "simplification": "Energy-flow diagram, not installation wiring; battery/storage omitted.",
+    "template": "solar-energy",
+    "text_boxes": [
+      {
+        "text": "CHATREEL / LEARN IN MOTION",
+        "x": 52,
+        "y": 28.0,
+        "w": 322.546875,
+        "h": 24.32,
+        "size": 19
+      },
+      {
+        "text": "02",
+        "x": 1200.15625,
+        "y": 28.0,
+        "w": 27.84375,
+        "h": 25.6,
+        "size": 20
+      },
+      {
+        "text": "Follow the energy conversion",
+        "x": 52,
+        "y": 78.0,
+        "w": 814.390625,
+        "h": 62.72,
+        "size": 49
+      },
+      {
+        "text": "A simplified grid-compatible energy flow",
+        "x": 52,
+        "y": 156.0,
+        "w": 546.515625,
+        "h": 34.56,
+        "size": 27
+      },
+      {
+        "text": "Panels produce DC electricity. An inverter converts it to AC for household use.",
+        "x": 52,
+        "y": 620.0,
+        "w": 1013.09375,
+        "h": 33.28,
+        "size": 26
+      },
+      {
+        "text": "U.S. DOE \u00b7 Solar Photovoltaic Technology Basics",
+        "x": 52,
+        "y": 692.0,
+        "w": 382.671875,
+        "h": 20.48,
+        "size": 16
+      },
+      {
+        "text": "Sunlight",
+        "x": 130.34375,
+        "y": 425.4,
+        "w": 137.3125,
+        "h": 37.12,
+        "size": 29
+      },
+      {
+        "text": "Photons reach the",
+        "x": 89.96875,
+        "y": 500.2,
+        "w": 218.0625,
+        "h": 30.72,
+        "size": 24
+      },
+      {
+        "text": "panel",
+        "x": 165.703125,
+        "y": 530.92,
+        "w": 66.59375,
+        "h": 30.72,
+        "size": 24
+      },
+      {
+        "text": "PV panel",
+        "x": 420.8203125,
+        "y": 425.4,
+        "w": 144.359375,
+        "h": 37.12,
+        "size": 29
+      },
+      {
+        "text": "Produces DC",
+        "x": 417.0625,
+        "y": 500.2,
+        "w": 151.875,
+        "h": 30.72,
+        "size": 24
+      },
+      {
+        "text": "electricity",
+        "x": 433.578125,
+        "y": 530.92,
+        "w": 118.84375,
+        "h": 30.72,
+        "size": 24
+      },
+      {
+        "text": "Inverter",
+        "x": 720.9296875,
+        "y": 425.4,
+        "w": 132.140625,
+        "h": 37.12,
+        "size": 29
+      },
+      {
+        "text": "Converts DC into AC",
+        "x": 664.8515625,
+        "y": 500.2,
+        "w": 244.296875,
+        "h": 30.72,
+        "size": 24
+      },
+      {
+        "text": "Home",
+        "x": 1033.9609375,
+        "y": 425.4,
+        "w": 94.078125,
+        "h": 37.12,
+        "size": 29
+      },
+      {
+        "text": "Uses AC electricity",
+        "x": 968.90625,
+        "y": 500.2,
+        "w": 224.1875,
+        "h": 30.72,
+        "size": 24
+      }
+    ],
+    "design_size": [
+      1280,
+      720
+    ],
+    "recommended_duration": 11.4,
+    "reading_review": "sufficient by heuristic"
+  },
+  {
+    "template": "comparison",
+    "text_boxes": [
+      {
+        "text": "CHATREEL / LEARN IN MOTION",
+        "x": 52,
+        "y": 28.0,
+        "w": 322.546875,
+        "h": 24.32,
+        "size": 19
+      },
+      {
+        "text": "03",
+        "x": 1200.15625,
+        "y": 28.0,
+        "w": 27.84375,
+        "h": 25.6,
+        "size": 20
+      },
+      {
+        "text": "DC and AC describe different behavior",
+        "x": 52,
+        "y": 78.0,
+        "w": 1058.0,
+        "h": 62.72,
+        "size": 49
+      },
+      {
+        "text": "A conceptual comparison; actual waveforms can vary",
+        "x": 52,
+        "y": 156.0,
+        "w": 724.9375,
+        "h": 34.56,
+        "size": 27
+      },
+      {
+        "text": "DC maintains a direction of current. AC periodically reverses direction.",
+        "x": 52,
+        "y": 620.0,
+        "w": 916.9375,
+        "h": 33.28,
+        "size": 26
+      },
+      {
+        "text": "CODE-RENDERED / NO GENERATIVE MODELS",
+        "x": 52,
+        "y": 692.0,
+        "w": 359.796875,
+        "h": 20.48,
+        "size": 16
+      },
+      {
+        "text": "Direct current",
+        "x": 74.0,
+        "y": 355.0,
+        "w": 237.671875,
+        "h": 38.4,
+        "size": 30
+      },
+      {
+        "text": "The direction of current does not",
+        "x": 74.0,
+        "y": 440.0,
+        "w": 410.625,
+        "h": 32.0,
+        "size": 25
+      },
+      {
+        "text": "periodically reverse. PV panels supply DC.",
+        "x": 74.0,
+        "y": 472.0,
+        "w": 527.671875,
+        "h": 32.0,
+        "size": 25
+      },
+      {
+        "text": "Alternating current",
+        "x": 674.0,
+        "y": 355.0,
+        "w": 327.265625,
+        "h": 38.4,
+        "size": 30
+      },
+      {
+        "text": "Current periodically reverses direction.",
+        "x": 674.0,
+        "y": 440.0,
+        "w": 486.65625,
+        "h": 32.0,
+        "size": 25
+      },
+      {
+        "text": "Grid-connected homes commonly use AC.",
+        "x": 674.0,
+        "y": 472.0,
+        "w": 525.109375,
+        "h": 32.0,
+        "size": 25
+      }
+    ],
+    "design_size": [
+      1280,
+      720
+    ],
+    "recommended_duration": 15.5,
+    "reading_review": "sufficient by heuristic"
+  },
+  {
+    "expression": "power * time",
+    "result": "6",
+    "variables": {
+      "power": 2,
+      "time": 3
+    },
+    "template": "equation",
+    "text_boxes": [
+      {
+        "text": "CHATREEL / LEARN IN MOTION",
+        "x": 52,
+        "y": 28.0,
+        "w": 322.546875,
+        "h": 24.32,
+        "size": 19
+      },
+      {
+        "text": "04",
+        "x": 1200.15625,
+        "y": 28.0,
+        "w": 27.84375,
+        "h": 25.6,
+        "size": 20
+      },
+      {
+        "text": "Power and time determine energy",
+        "x": 52,
+        "y": 78.0,
+        "w": 945.703125,
+        "h": 62.72,
+        "size": 49
+      },
+      {
+        "text": "Illustrative constant-power calculation",
+        "x": 52,
+        "y": 156.0,
+        "w": 517.390625,
+        "h": 34.56,
+        "size": 27
+      },
+      {
+        "text": "At constant power, two kilowatts for three hours gives six kilowatt-hours.",
+        "x": 52,
+        "y": 620.0,
+        "w": 951.90625,
+        "h": 33.28,
+        "size": 26
+      },
+      {
+        "text": "CODE-RENDERED / NO GENERATIVE MODELS",
+        "x": 52,
+        "y": 692.0,
+        "w": 359.796875,
+        "h": 20.48,
+        "size": 16
+      },
+      {
+        "text": "power \u00d7 time",
+        "x": 462.0390625,
+        "y": 265.0,
+        "w": 355.921875,
+        "h": 60.160000000000004,
+        "size": 47
+      },
+      {
+        "text": "power = 2 kW time = 3 h",
+        "x": 455.4765625,
+        "y": 380.0,
+        "w": 369.046875,
+        "h": 37.12,
+        "size": 29
+      },
+      {
+        "text": "= 6 kWh",
+        "x": 510.484375,
+        "y": 466.20000000000005,
+        "w": 259.03125,
+        "h": 70.4,
+        "size": 55
+      }
+    ],
+    "design_size": [
+      1280,
+      720
+    ],
+    "recommended_duration": 8.3,
+    "reading_review": "sufficient by heuristic"
+  },
+  {
+    "template": "recap",
+    "text_boxes": [
+      {
+        "text": "CHATREEL / LEARN IN MOTION",
+        "x": 52,
+        "y": 28.0,
+        "w": 322.546875,
+        "h": 24.32,
+        "size": 19
+      },
+      {
+        "text": "05",
+        "x": 1200.15625,
+        "y": 28.0,
+        "w": 27.84375,
+        "h": 25.6,
+        "size": 20
+      },
+      {
+        "text": "The three ideas to remember",
+        "x": 52,
+        "y": 78.0,
+        "w": 808.421875,
+        "h": 62.72,
+        "size": 49
+      },
+      {
+        "text": "Simplified explanation; not an installation guide",
+        "x": 52,
+        "y": 156.0,
+        "w": 646.953125,
+        "h": 34.56,
+        "size": 27
+      },
+      {
+        "text": "Light becomes DC electricity. Inverters provide AC. Energy depends on power and time.",
+        "x": 52,
+        "y": 620.0,
+        "w": 1142.34375,
+        "h": 33.28,
+        "size": 26
+      },
+      {
+        "text": "CODE-RENDERED / NO GENERATIVE MODELS",
+        "x": 52,
+        "y": 692.0,
+        "w": 359.796875,
+        "h": 20.48,
+        "size": 16
+      },
+      {
+        "text": "Solar cells convert incoming light into electrical energy.",
+        "x": 117,
+        "y": 235.0,
+        "w": 1010.921875,
+        "h": 40.96,
+        "size": 32
+      },
+      {
+        "text": "An inverter converts DC electricity into AC.",
+        "x": 117,
+        "y": 348.3333333333333,
+        "w": 778.65625,
+        "h": 40.96,
+        "size": 32
+      },
+      {
+        "text": "For constant power, energy equals power multiplied by",
+        "x": 117,
+        "y": 461.66666666666663,
+        "w": 996.703125,
+        "h": 40.96,
+        "size": 32
+      },
+      {
+        "text": "time.",
+        "x": 117,
+        "y": 502.6266666666666,
+        "w": 93.46875,
+        "h": 40.96,
+        "size": 32
+      }
+    ],
+    "design_size": [
+      1280,
+      720
+    ],
+    "recommended_duration": 14.2,
+    "reading_review": "sufficient by heuristic"
+  }
+]

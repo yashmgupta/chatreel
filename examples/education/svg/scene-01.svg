@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+<rect x="0" y="0" width="1280" height="720" rx="0" fill="#f5f3ed" opacity="1.00000" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="12" height="720" rx="0" fill="#c94726" opacity="1.00000" stroke="none" stroke-width="1"/>
+<text x="52" y="46.0" font-family="DejaVu Sans" font-size="19" font-weight="700" fill="#536675" opacity="1.00000">ENERGY / A SHORT EXPLAINER</text>
+<text x="1200.15625" y="47.0" font-family="DejaVu Sans" font-size="20" font-weight="700" fill="#c94726" opacity="1.00000">01</text>
+<text x="52" y="124.0" font-family="DejaVu Sans" font-size="49" font-weight="700" fill="#182b3a" opacity="1.00000">Sunlight can power a home</text>
+<text x="52" y="182.0" font-family="DejaVu Sans" font-size="27" font-weight="400" fill="#536675" opacity="1.00000">Follow the energy, one step at a time</text>
+<polyline points="52,604 1228,604" fill="none" stroke="#dce2e4" stroke-width="1" opacity="1"/>
+<text x="52" y="645.0" font-family="DejaVu Sans" font-size="26" font-weight="400" fill="#182b3a" opacity="1.00000">Solar cells convert light energy into electrical energy.</text>
+<text x="52" y="707.0" font-family="DejaVu Sans" font-size="16" font-weight="400" fill="#536675" opacity="1.00000">CODE-RENDERED / NO GENERATIVE MODELS</text>
+<ellipse cx="640.0" cy="354.0" rx="35.36000000000001" ry="35.36000000000001" fill="#c94726" opacity="1.00000" stroke="none" stroke-width="2"/>
+<polyline points="694.808,354.0 723.096,354.0" fill="none" stroke="#c94726" stroke-width="6.188000000000001" opacity="1"/>
+<polyline points="678.7551084632723,392.7551084632723 698.7577450894773,412.75774508947734" fill="none" stroke="#c94726" stroke-width="6.188000000000001" opacity="1"/>
+<polyline points="640.0,408.808 640.0,437.096" fill="none" stroke="#c94726" stroke-width="6.188000000000001" opacity="1"/>
+<polyline points="601.2448915367277,392.7551084632723 581.2422549105227,412.75774508947734" fill="none" stroke="#c94726" stroke-width="6.188000000000001" opacity="1"/>
+<polyline points="585.192,354.0 556.904,354.0" fill="none" stroke="#c94726" stroke-width="6.188000000000001" opacity="1"/>
+<polyline points="601.2448915367277,315.2448915367277 581.2422549105227,295.24225491052266" fill="none" stroke="#c94726" stroke-width="6.188000000000001" opacity="1"/>
+<polyline points="640.0,299.192 640.0,270.904" fill="none" stroke="#c94726" stroke-width="6.188000000000001" opacity="1"/>
+<polyline points="678.7551084632723,315.24489153672766 698.7577450894773,295.24225491052266" fill="none" stroke="#c94726" stroke-width="6.188000000000001" opacity="1"/>
+<text x="204.49218749999994" y="509.0" font-family="DejaVu Sans" font-size="38" font-weight="700" fill="#182b3a" opacity="1.00000">From incoming light to useful electricity.</text>
+</svg>

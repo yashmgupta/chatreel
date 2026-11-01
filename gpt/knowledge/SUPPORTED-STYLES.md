@@ -1,6 +1,6 @@
 # Supported style ports
 
-Adapted from Lemomo/LemoLab Lemo-Opuscar. CC BY 4.0; see ATTRIBUTION.md. Only the five IDs below are valid. Use the compact implemented grammar; broader reference prompts describe capabilities not implemented here.
+Adapted from Lemomo/LemoLab Lemo-Opuscar. CC BY 4.0; see ATTRIBUTION.md. These five legacy styles remain available. New educational templates and themes are documented in EDUCATION.md. Use the compact implemented grammar; broader reference prompts describe capabilities not implemented here.
 
 ## swiss-motion
 Use paper, black ink and one warm signal color. Compose on a 12-column grid. Use exact eased wipes and straight camera moves. Never add gradients, bounce or grain. Keep type flush left; spare space gives shapes mass. Original harmonic pulse music.

@@ -4,11 +4,11 @@ Repository files improve the landing page. GitHub's About description, topics an
 
 ## Suggested About text
 
-ChatGPT to code-rendered short films: offline Python or a self-hosted GPT Action, with five visual styles, procedural music and MP4 export.
+Code-rendered educational videos: 18 templates, Python/Canvas, checked arithmetic and 1080p MP4 export. No generative models.
 
 ## Suggested topics
 
-`chatgpt`, `custom-gpt`, `gpt-actions`, `code-interpreter`, `text-to-video`, `code-rendered-video`, `generative-art`, `animation`, `python`, `pillow`, `fastapi`, `playwright`, `ffmpeg`, `self-hosted`
+`chatgpt`, `custom-gpt`, `gpt-actions`, `code-interpreter`, `text-to-video`, `code-rendered-video`, `educational-videos`, `animation`, `python`, `pillow`, `fastapi`, `playwright`, `ffmpeg`, `self-hosted`
 
 The description and README must make clear that this is code-rendered animation, not a video-generation model. Use topics that describe actual features.
 

@@ -1,0 +1,37 @@
+{
+  "title": "Two ways energy moves",
+  "style": "coral",
+  "width": 640,
+  "height": 360,
+  "fps": 12,
+  "scenes": [
+    {
+      "template": "comparison",
+      "title": "Two ways energy moves",
+      "duration": 5,
+      "narration": "",
+      "content": {
+        "subtitle": "Two energy-transfer mechanisms",
+        "items": [
+          {
+            "label": "Conduction",
+            "detail": "Energy transfers through contact between neighboring particles.",
+            "icon": "gear"
+          },
+          {
+            "label": "Radiation",
+            "detail": "Energy travels as electromagnetic waves, including through a vacuum.",
+            "icon": "sun"
+          }
+        ]
+      }
+    }
+  ],
+  "music": {
+    "gain": 0.12,
+    "bpm": 96
+  },
+  "seed": 7,
+  "voice": "subtitles",
+  "webgl": false
+}

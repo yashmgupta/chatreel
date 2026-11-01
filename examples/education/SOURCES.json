@@ -1,0 +1,40 @@
+[
+  {
+    "scene": 1,
+    "template": "title",
+    "source": null,
+    "data_kind": "illustrative",
+    "verification": "source/factual review required"
+  },
+  {
+    "scene": 2,
+    "template": "solar-energy",
+    "source": {
+      "label": "U.S. DOE \u00b7 Solar Photovoltaic Technology Basics",
+      "url": "https://www.energy.gov/eere/solar/solar-photovoltaic-technology-basics"
+    },
+    "data_kind": "illustrative",
+    "verification": "source/factual review required"
+  },
+  {
+    "scene": 3,
+    "template": "comparison",
+    "source": null,
+    "data_kind": "illustrative",
+    "verification": "source/factual review required"
+  },
+  {
+    "scene": 4,
+    "template": "equation",
+    "source": null,
+    "data_kind": "illustrative",
+    "verification": "source/factual review required"
+  },
+  {
+    "scene": 5,
+    "template": "recap",
+    "source": null,
+    "data_kind": "illustrative",
+    "verification": "source/factual review required"
+  }
+]

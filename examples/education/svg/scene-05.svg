@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+<rect x="0" y="0" width="1280" height="720" rx="0" fill="#f5f3ed" opacity="1.00000" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="12" height="720" rx="0" fill="#c94726" opacity="1.00000" stroke="none" stroke-width="1"/>
+<text x="52" y="46.0" font-family="DejaVu Sans" font-size="19" font-weight="700" fill="#536675" opacity="1.00000">CHATREEL / LEARN IN MOTION</text>
+<text x="1200.15625" y="47.0" font-family="DejaVu Sans" font-size="20" font-weight="700" fill="#c94726" opacity="1.00000">05</text>
+<text x="52" y="124.0" font-family="DejaVu Sans" font-size="49" font-weight="700" fill="#182b3a" opacity="1.00000">The three ideas to remember</text>
+<text x="52" y="182.0" font-family="DejaVu Sans" font-size="27" font-weight="400" fill="#536675" opacity="1.00000">Simplified explanation; not an installation guide</text>
+<polyline points="52,604 1228,604" fill="none" stroke="#dce2e4" stroke-width="1" opacity="1"/>
+<text x="52" y="645.0" font-family="DejaVu Sans" font-size="26" font-weight="400" fill="#182b3a" opacity="1.00000">Light becomes DC electricity. Inverters provide AC. Energy depends on power and time.</text>
+<text x="52" y="707.0" font-family="DejaVu Sans" font-size="16" font-weight="400" fill="#536675" opacity="1.00000">CODE-RENDERED / NO GENERATIVE MODELS</text>
+<polyline points="64.1,274.6666666666667 73.45,284.8666666666667 89.6,263.6166666666667" fill="none" stroke="#c94726" stroke-width="5.4" opacity="1"/>
+<text x="117" y="265.0" font-family="DejaVu Sans" font-size="32" font-weight="700" fill="#182b3a" opacity="1.00000">Solar cells convert incoming light into electrical energy.</text>
+<polyline points="64.1,388.0 73.45,398.2 89.6,376.95" fill="none" stroke="#c94726" stroke-width="5.4" opacity="1"/>
+<text x="117" y="378.3333333333333" font-family="DejaVu Sans" font-size="32" font-weight="700" fill="#182b3a" opacity="1.00000">An inverter converts DC electricity into AC.</text>
+<polyline points="64.1,501.3333333333333 73.45,511.5333333333333 89.6,490.2833333333333" fill="none" stroke="#c94726" stroke-width="5.4" opacity="1"/>
+<text x="117" y="491.66666666666663" font-family="DejaVu Sans" font-size="32" font-weight="700" fill="#182b3a" opacity="1.00000">For constant power, energy equals power multiplied by</text>
+<text x="117" y="532.6266666666666" font-family="DejaVu Sans" font-size="32" font-weight="700" fill="#182b3a" opacity="1.00000">time.</text>
+</svg>

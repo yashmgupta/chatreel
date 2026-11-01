@@ -1,0 +1,20 @@
+{
+  "encoding": {
+    "status": "passed",
+    "frames": 60,
+    "duration": 5,
+    "width": 640,
+    "height": 360,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "color_space": "bt709",
+    "fps": "12/1"
+  },
+  "audio": {
+    "target_lufs": -14,
+    "target_true_peak_db": -1.5,
+    "input_lufs": -33.56,
+    "silent": false
+  }
+}

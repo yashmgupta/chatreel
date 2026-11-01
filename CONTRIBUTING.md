@@ -24,7 +24,7 @@ python -m unittest discover -s tests -p test_render.py -v
 python -m unittest discover -s tests -v
 ```
 
-For visual changes, render the affected styles, decode frames from the MP4s and inspect captions, silhouettes, clipping and motion. `tools/validate_styles.py` produces offline clips; after full server tests, `tools/inspect_renders.py` checks both sets of encoded clips. Describe what you actually ran; do not mark browser checks passed when only offline checks ran.
+For visual changes, render the affected styles, decode frames from the MP4s and inspect captions, silhouettes, clipping and motion. `tools/render_education.py` renders the educational templates; run it with `--backend canvas` for browser clips, then `tools/audit_education.py` checks encoded outputs and backend agreement. The legacy tools remain available for old styles. Describe what you actually ran; do not mark browser checks passed when only offline checks ran.
 
 If the README, schema, renderer or bundled license files change, refresh the upload kit:
 

@@ -1,0 +1,47 @@
+{
+  "title": "From question to evidence",
+  "style": "paper",
+  "width": 640,
+  "height": 360,
+  "fps": 12,
+  "scenes": [
+    {
+      "template": "process",
+      "title": "From question to evidence",
+      "duration": 5,
+      "narration": "",
+      "content": {
+        "subtitle": "A sequence, not a collection of floating shapes",
+        "items": [
+          {
+            "label": "Question",
+            "detail": "Choose what to investigate",
+            "icon": "lightbulb"
+          },
+          {
+            "label": "Measure",
+            "detail": "Collect relevant observations",
+            "icon": "gear"
+          },
+          {
+            "label": "Compare",
+            "detail": "Check against the prediction",
+            "icon": "book"
+          },
+          {
+            "label": "Revise",
+            "detail": "Update the explanation",
+            "icon": "check"
+          }
+        ]
+      }
+    }
+  ],
+  "music": {
+    "gain": 0.12,
+    "bpm": 96
+  },
+  "seed": 7,
+  "voice": "subtitles",
+  "webgl": false
+}

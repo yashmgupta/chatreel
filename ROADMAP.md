@@ -1,6 +1,6 @@
 # Chatreel roadmap
 
-Chatreel currently has two working rendering paths and five compact style ports. These are directions for discussion, not committed releases or hosted features.
+Chatreel has two rendering paths, 18 educational templates, six new themes and five legacy style ports. These are directions for discussion, not committed releases or hosted features.
 
 ## Make the first film easier
 
@@ -10,9 +10,9 @@ Chatreel currently has two working rendering paths and five compact style ports.
 
 ## Improve picture and sound
 
-- Richer native reveals and camera grammar for the five existing styles.
-- Better font discovery, text shaping and multilingual caption coverage.
-- Test real moviepy encoding in addition to the current ffmpeg path.
+- Improve the educational illustrations and material grammar of the five legacy style ports.
+- Extend bundled-font coverage and text shaping beyond the currently supported scripts.
+- Expand MoviePy fallback testing across supported operating systems; a real v2 fallback render now passes locally.
 - Consider optional higher-quality server TTS, with clear licensing and resource limits.
 
 ## Improve hosting

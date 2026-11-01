@@ -1,0 +1,27 @@
+{
+  "title": "A calculation in four lines",
+  "style": "violet",
+  "width": 640,
+  "height": 360,
+  "fps": 12,
+  "scenes": [
+    {
+      "template": "code-walkthrough",
+      "title": "A calculation in four lines",
+      "duration": 5,
+      "narration": "",
+      "content": {
+        "subtitle": "Literal code, never executed by the renderer",
+        "code": "distance = 120\ntime = 2\nspeed = distance / time\nprint(speed)  # 60.0",
+        "highlight": 2
+      }
+    }
+  ],
+  "music": {
+    "gain": 0.12,
+    "bpm": 96
+  },
+  "seed": 7,
+  "voice": "subtitles",
+  "webgl": false
+}

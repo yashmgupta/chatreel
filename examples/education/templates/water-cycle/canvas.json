@@ -1,0 +1,29 @@
+{
+  "title": "Water changes place and state",
+  "style": "paper",
+  "width": 640,
+  "height": 360,
+  "fps": 12,
+  "scenes": [
+    {
+      "template": "water-cycle",
+      "title": "Water changes place and state",
+      "duration": 5,
+      "narration": "",
+      "content": {
+        "subtitle": "A simplified subset of the water cycle",
+        "source": {
+          "label": "USGS \u00b7 Water Cycle",
+          "url": "https://www.usgs.gov/special-topics/water-science-school/science/water-cycle"
+        }
+      }
+    }
+  ],
+  "music": {
+    "gain": 0.12,
+    "bpm": 96
+  },
+  "seed": 7,
+  "voice": "subtitles",
+  "webgl": false
+}

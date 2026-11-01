@@ -1,0 +1,42 @@
+{
+  "title": "A scientific explanation",
+  "style": "midnight",
+  "width": 640,
+  "height": 360,
+  "fps": 12,
+  "scenes": [
+    {
+      "template": "concept",
+      "title": "A scientific explanation",
+      "duration": 5,
+      "narration": "",
+      "content": {
+        "subtitle": "Separate the idea into meaningful parts",
+        "items": [
+          {
+            "label": "Observe",
+            "detail": "Look for a measurable pattern.",
+            "icon": "globe"
+          },
+          {
+            "label": "Explain",
+            "detail": "Connect evidence to a mechanism.",
+            "icon": "atom"
+          },
+          {
+            "label": "Check",
+            "detail": "Test the explanation.",
+            "icon": "check"
+          }
+        ]
+      }
+    }
+  ],
+  "music": {
+    "gain": 0.12,
+    "bpm": 96
+  },
+  "seed": 7,
+  "voice": "subtitles",
+  "webgl": false
+}

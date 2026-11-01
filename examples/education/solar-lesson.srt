@@ -1,0 +1,19 @@
+1
+00:00:00,000 --> 00:00:08,000
+Solar cells convert light energy into electrical energy.
+
+2
+00:00:08,000 --> 00:00:20,000
+Panels produce DC electricity. An inverter converts it to AC for household use.
+
+3
+00:00:20,000 --> 00:00:36,000
+DC maintains a direction of current. AC periodically reverses direction.
+
+4
+00:00:36,000 --> 00:00:45,000
+At constant power, two kilowatts for three hours gives six kilowatt-hours.
+
+5
+00:00:45,000 --> 00:01:00,000
+Light becomes DC electricity. Inverters provide AC. Energy depends on power and time.

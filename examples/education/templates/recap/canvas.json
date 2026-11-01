@@ -1,0 +1,36 @@
+{
+  "title": "What makes an explanation clear?",
+  "style": "ocean",
+  "width": 640,
+  "height": 360,
+  "fps": 12,
+  "scenes": [
+    {
+      "template": "recap",
+      "title": "What makes an explanation clear?",
+      "duration": 5,
+      "narration": "",
+      "content": {
+        "subtitle": "A short checklist for a stronger explanation",
+        "items": [
+          {
+            "label": "Name the question."
+          },
+          {
+            "label": "Show the mechanism."
+          },
+          {
+            "label": "State what the evidence supports."
+          }
+        ]
+      }
+    }
+  ],
+  "music": {
+    "gain": 0.12,
+    "bpm": 96
+  },
+  "seed": 7,
+  "voice": "subtitles",
+  "webgl": false
+}

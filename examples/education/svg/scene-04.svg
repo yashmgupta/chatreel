@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+<rect x="0" y="0" width="1280" height="720" rx="0" fill="#f5f3ed" opacity="1.00000" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="12" height="720" rx="0" fill="#c94726" opacity="1.00000" stroke="none" stroke-width="1"/>
+<text x="52" y="46.0" font-family="DejaVu Sans" font-size="19" font-weight="700" fill="#536675" opacity="1.00000">CHATREEL / LEARN IN MOTION</text>
+<text x="1200.15625" y="47.0" font-family="DejaVu Sans" font-size="20" font-weight="700" fill="#c94726" opacity="1.00000">04</text>
+<text x="52" y="124.0" font-family="DejaVu Sans" font-size="49" font-weight="700" fill="#182b3a" opacity="1.00000">Power and time determine energy</text>
+<text x="52" y="182.0" font-family="DejaVu Sans" font-size="27" font-weight="400" fill="#536675" opacity="1.00000">Illustrative constant-power calculation</text>
+<polyline points="52,604 1228,604" fill="none" stroke="#dce2e4" stroke-width="1" opacity="1"/>
+<text x="52" y="645.0" font-family="DejaVu Sans" font-size="26" font-weight="400" fill="#182b3a" opacity="1.00000">At constant power, two kilowatts for three hours gives six kilowatt-hours.</text>
+<text x="52" y="707.0" font-family="DejaVu Sans" font-size="16" font-weight="400" fill="#536675" opacity="1.00000">CODE-RENDERED / NO GENERATIVE MODELS</text>
+<rect x="52" y="235.0" width="1176" height="340" rx="20" fill="#ffffff" opacity="1.00000" stroke="#dce2e4" stroke-width="1"/>
+<text x="462.0390625" y="309.0" font-family="DejaVu Sans" font-size="47" font-weight="700" fill="#182b3a" opacity="1.00000">power × time</text>
+<text x="455.4765625" y="407.0" font-family="DejaVu Sans" font-size="29" font-weight="400" fill="#536675" opacity="1.00000">power = 2 kW time = 3 h</text>
+<text x="510.484375" y="518.2" font-family="DejaVu Sans" font-size="55" font-weight="700" fill="#c94726" opacity="1.00000">= 6 kWh</text>
+</svg>

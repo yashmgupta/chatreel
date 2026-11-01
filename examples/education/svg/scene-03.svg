@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+<rect x="0" y="0" width="1280" height="720" rx="0" fill="#f5f3ed" opacity="1.00000" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="12" height="720" rx="0" fill="#c94726" opacity="1.00000" stroke="none" stroke-width="1"/>
+<text x="52" y="46.0" font-family="DejaVu Sans" font-size="19" font-weight="700" fill="#536675" opacity="1.00000">CHATREEL / LEARN IN MOTION</text>
+<text x="1200.15625" y="47.0" font-family="DejaVu Sans" font-size="20" font-weight="700" fill="#c94726" opacity="1.00000">03</text>
+<text x="52" y="124.0" font-family="DejaVu Sans" font-size="49" font-weight="700" fill="#182b3a" opacity="1.00000">DC and AC describe different behavior</text>
+<text x="52" y="182.0" font-family="DejaVu Sans" font-size="27" font-weight="400" fill="#536675" opacity="1.00000">A conceptual comparison; actual waveforms can vary</text>
+<polyline points="52,604 1228,604" fill="none" stroke="#dce2e4" stroke-width="1" opacity="1"/>
+<text x="52" y="645.0" font-family="DejaVu Sans" font-size="26" font-weight="400" fill="#182b3a" opacity="1.00000">DC maintains a direction of current. AC periodically reverses direction.</text>
+<text x="52" y="707.0" font-family="DejaVu Sans" font-size="16" font-weight="400" fill="#536675" opacity="1.00000">CODE-RENDERED / NO GENERATIVE MODELS</text>
+<rect x="52.0" y="235.0" width="576.0" height="340" rx="18" fill="#ffffff" opacity="1.00000" stroke="#dce2e4" stroke-width="1"/>
+<rect x="309.4" y="279.12" width="61.199999999999996" height="41.4" rx="2.16" fill="none" opacity="1.00000" stroke="#c94726" stroke-width="3"/>
+<polyline points="324.7,279.12 324.7,320.52" fill="none" stroke="#c94726" stroke-width="1.5" opacity="1"/>
+<polyline points="340.0,279.12 340.0,320.52" fill="none" stroke="#c94726" stroke-width="1.5" opacity="1"/>
+<polyline points="355.29999999999995,279.12 355.29999999999995,320.52" fill="none" stroke="#c94726" stroke-width="1.5" opacity="1"/>
+<polyline points="309.4,300 370.6,300" fill="none" stroke="#c94726" stroke-width="1.5" opacity="1"/>
+<polyline points="340.0,320.88 340.0,331.68 358.0,331.68 322.0,331.68" fill="none" stroke="#c94726" stroke-width="3" opacity="1"/>
+<text x="74.0" y="383.0" font-family="DejaVu Sans" font-size="30" font-weight="700" fill="#182b3a" opacity="1.00000">Direct current</text>
+<text x="74.0" y="464.0" font-family="DejaVu Sans" font-size="25" font-weight="400" fill="#536675" opacity="1.00000">The direction of current does not</text>
+<text x="74.0" y="496.0" font-family="DejaVu Sans" font-size="25" font-weight="400" fill="#536675" opacity="1.00000">periodically reverse. PV panels supply DC.</text>
+<rect x="652.0" y="235.0" width="576.0" height="340" rx="18" fill="#ffffff" opacity="1.00000" stroke="#dce2e4" stroke-width="1"/>
+<polyline points="907.6,298.2 940.0,269.4 972.4,298.2" fill="none" stroke="#c94726" stroke-width="3" opacity="1"/>
+<rect x="916.6" y="296.4" width="46.800000000000004" height="34.199999999999996" rx="0" fill="none" opacity="1.00000" stroke="#c94726" stroke-width="3"/>
+<rect x="933.52" y="309.0" width="12.959999999999999" height="21.599999999999998" rx="0" fill="none" opacity="1.00000" stroke="#c94726" stroke-width="2.0999999999999996"/>
+<text x="674.0" y="383.0" font-family="DejaVu Sans" font-size="30" font-weight="700" fill="#182b3a" opacity="1.00000">Alternating current</text>
+<text x="674.0" y="464.0" font-family="DejaVu Sans" font-size="25" font-weight="400" fill="#536675" opacity="1.00000">Current periodically reverses direction.</text>
+<text x="674.0" y="496.0" font-family="DejaVu Sans" font-size="25" font-weight="400" fill="#536675" opacity="1.00000">Grid-connected homes commonly use AC.</text>
+</svg>

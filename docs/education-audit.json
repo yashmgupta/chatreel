@@ -1,0 +1,578 @@
+[
+  {
+    "template": "bar-chart",
+    "outputs": {
+      "python": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      },
+      "canvas": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      }
+    },
+    "backend_rgb_mean_absolute_difference": 1.994
+  },
+  {
+    "template": "code-walkthrough",
+    "outputs": {
+      "python": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      },
+      "canvas": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      }
+    },
+    "backend_rgb_mean_absolute_difference": 1.579
+  },
+  {
+    "template": "comparison",
+    "outputs": {
+      "python": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      },
+      "canvas": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      }
+    },
+    "backend_rgb_mean_absolute_difference": 1.713
+  },
+  {
+    "template": "concept",
+    "outputs": {
+      "python": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      },
+      "canvas": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      }
+    },
+    "backend_rgb_mean_absolute_difference": 1.959
+  },
+  {
+    "template": "cycle",
+    "outputs": {
+      "python": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      },
+      "canvas": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      }
+    },
+    "backend_rgb_mean_absolute_difference": 1.433
+  },
+  {
+    "template": "donut-chart",
+    "outputs": {
+      "python": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      },
+      "canvas": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      }
+    },
+    "backend_rgb_mean_absolute_difference": 1.458
+  },
+  {
+    "template": "equation",
+    "outputs": {
+      "python": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      },
+      "canvas": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      }
+    },
+    "backend_rgb_mean_absolute_difference": 1.616
+  },
+  {
+    "template": "fraction",
+    "outputs": {
+      "python": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      },
+      "canvas": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      }
+    },
+    "backend_rgb_mean_absolute_difference": 1.342
+  },
+  {
+    "template": "labeled-diagram",
+    "outputs": {
+      "python": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      },
+      "canvas": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      }
+    },
+    "backend_rgb_mean_absolute_difference": 1.523
+  },
+  {
+    "template": "line-chart",
+    "outputs": {
+      "python": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      },
+      "canvas": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      }
+    },
+    "backend_rgb_mean_absolute_difference": 1.789
+  },
+  {
+    "template": "number-line",
+    "outputs": {
+      "python": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      },
+      "canvas": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      }
+    },
+    "backend_rgb_mean_absolute_difference": 1.417
+  },
+  {
+    "template": "process",
+    "outputs": {
+      "python": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      },
+      "canvas": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      }
+    },
+    "backend_rgb_mean_absolute_difference": 2.195
+  },
+  {
+    "template": "quiz",
+    "outputs": {
+      "python": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      },
+      "canvas": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      }
+    },
+    "backend_rgb_mean_absolute_difference": 1.834
+  },
+  {
+    "template": "recap",
+    "outputs": {
+      "python": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      },
+      "canvas": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      }
+    },
+    "backend_rgb_mean_absolute_difference": 1.712
+  },
+  {
+    "template": "solar-energy",
+    "outputs": {
+      "python": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      },
+      "canvas": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      }
+    },
+    "backend_rgb_mean_absolute_difference": 2.62
+  },
+  {
+    "template": "timeline",
+    "outputs": {
+      "python": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      },
+      "canvas": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      }
+    },
+    "backend_rgb_mean_absolute_difference": 1.555
+  },
+  {
+    "template": "title",
+    "outputs": {
+      "python": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      },
+      "canvas": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      }
+    },
+    "backend_rgb_mean_absolute_difference": 1.599
+  },
+  {
+    "template": "water-cycle",
+    "outputs": {
+      "python": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      },
+      "canvas": {
+        "duration": 5.0,
+        "frames": 60,
+        "resolution": [
+          640,
+          360
+        ],
+        "integrated_lufs": -14.0,
+        "true_peak_dbfs": -1.5,
+        "black_intervals": 0,
+        "codec": "h264",
+        "color_space": "bt709"
+      }
+    },
+    "backend_rgb_mean_absolute_difference": 1.723
+  }
+]

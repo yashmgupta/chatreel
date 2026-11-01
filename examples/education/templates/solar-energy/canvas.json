@@ -1,0 +1,29 @@
+{
+  "title": "From sunlight to useful electricity",
+  "style": "midnight",
+  "width": 640,
+  "height": 360,
+  "fps": 12,
+  "scenes": [
+    {
+      "template": "solar-energy",
+      "title": "From sunlight to useful electricity",
+      "duration": 5,
+      "narration": "",
+      "content": {
+        "subtitle": "A simplified grid-compatible energy flow",
+        "source": {
+          "label": "U.S. DOE \u00b7 Solar Photovoltaic Technology Basics",
+          "url": "https://www.energy.gov/eere/solar/solar-photovoltaic-technology-basics"
+        }
+      }
+    }
+  ],
+  "music": {
+    "gain": 0.12,
+    "bpm": 96
+  },
+  "seed": 7,
+  "voice": "subtitles",
+  "webgl": false
+}

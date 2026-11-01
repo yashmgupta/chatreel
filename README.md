@@ -2,134 +2,173 @@
 
 # Chatreel
 
-**Turn a ChatGPT conversation into a short, code-rendered film.**
+**Educational videos rendered through code. No generative models.**
 
-Storyboard → confirm → render → download your MP4.
+18 lesson templates · six new themes · Python and Canvas · 1080p delivery
 
 [![Download the ChatGPT kit](https://img.shields.io/badge/Download-ChatGPT_kit-2563eb?style=for-the-badge)](https://github.com/yashmgupta/chatreel/raw/refs/heads/main/gpt/chatreel-offline.zip)
-[![Watch the example](https://img.shields.io/badge/Watch-15_second_example-7c3aed?style=for-the-badge)](https://github.com/yashmgupta/chatreel/blob/main/examples/story.mp4)
+[![Watch a real lesson](https://img.shields.io/badge/Watch-1080p_solar_lesson-7c3aed?style=for-the-badge)](examples/education/solar-lesson.mp4)
 
-[![MIT code](https://img.shields.io/badge/Code-MIT-22c55e)](LICENSE)
-[![CC BY 4.0 styles](https://img.shields.io/badge/Style_adaptations-CC_BY_4.0-22c55e)](ATTRIBUTION.md)
-[![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776ab?logo=python&logoColor=white)](renderer-py/)
-[![Local validation](https://img.shields.io/badge/Local_validation-12_tests_passed-15803d)](docs/VALIDATION.md)
+[![Renderer checks](https://github.com/yashmgupta/chatreel/actions/workflows/tests.yml/badge.svg)](https://github.com/yashmgupta/chatreel/actions/workflows/tests.yml)
+[![Code license](https://img.shields.io/badge/Code-MIT-22c55e)](LICENSE)
+[![Style attribution](https://img.shields.io/badge/Legacy_style_adaptations-CC_BY_4.0-22c55e)](ATTRIBUTION.md)
+[![Python](https://img.shields.io/badge/Python-3.11%2B-3776ab?logo=python&logoColor=white)](renderer-py/)
 [![GitHub stars](https://img.shields.io/github/stars/yashmgupta/chatreel?style=flat)](https://github.com/yashmgupta/chatreel/stargazers)
 
-[Start in ChatGPT](#start-here--make-a-film-in-a-chatgpt-chat) · [Five styles](#five-styles-you-can-render-today) · [Self-host the Action](#mode-b--action-render-service) · [Contribute](CONTRIBUTING.md)
+[Use in ChatGPT](#start-here--make-a-film-in-a-chatgpt-chat) · [Templates](#18-educational-templates) · [Render locally](#render-locally) · [Host an Action](#self-host-the-gpt-action) · [Evidence](docs/V2-VALIDATION.md)
 
-![Actual Chatreel renders cycling through Swiss Motion, Blueprint, Chalkboard, Woodcut and Pixel RPG](docs/media/styles-preview.gif)
+![Actual code-rendered educational templates](docs/media/education-preview.gif)
 
-*Actual clips from the included renderer. Compact geometric style ports, not video-generation models.*
+*Actual renders, not concept art. Diagrams are simplified teaching illustrations.*
 
 </div>
 
-Make short explainers, visual lessons and simple animated stories with **Python-rendered graphics and original procedural music**. Start with a ZIP uploaded into a ChatGPT Data Analysis session, or connect a Custom GPT to your own render server. No stock footage or video-generation model is used. ChatGPT feature availability varies by session.
+Make explainers with labelled processes, proportional charts, checked arithmetic, equal-area fractions, quizzes and readable captions. Every frame and musical note comes from conventional code. Rendering requires no model weights, inference API, image/video generation or stock footage. ChatGPT can help draft the script; it is not the pixel-generation engine.
 
-Adapted from **[Lemomo/LemoLab's Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar)**, with attribution and original licenses retained. These five ports interpret selected visual rules rather than reproduce the full upstream engines.
-
-| Pick your route | What you need | What you get |
-|---|---|---|
-| **ChatGPT + uploaded ZIP** | File uploads and Data Analysis | Offline 2D rendering, captions or your uploaded narration |
-| **Custom GPT + Action** | Your deployed HTTPS render server | Chromium rendering, simple synthetic speech, optional WebGL compositing |
-
-**New here?** Start with the ZIP route below. Hosting a server is optional.
+The original five style ports were adapted from **[Lemomo/LemoLab's Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar)**. The new educational scene compiler and templates are original Chatreel code. [Attribution and licenses](ATTRIBUTION.md) are retained. [Research notes](docs/RENDERER-RESEARCH.md) explain what we learned from Manim, MoviePy, drawsvg and imageio-ffmpeg.
 
 ## Start here — make a film in a ChatGPT chat
 
-**No coding or Custom GPT setup is needed for this route.** You need a ChatGPT session with file uploads and Code Interpreter / Data Analysis available.
+No local coding or Custom GPT setup is required for this route. You need file uploads and **Code Interpreter / Data Analysis** in your ChatGPT session.
 
 1. **[Download the ChatGPT upload ZIP](https://github.com/yashmgupta/chatreel/raw/refs/heads/main/gpt/chatreel-offline.zip).** Keep it zipped.
-2. Open a new ChatGPT conversation and **attach that ZIP** using the file-upload button.
-3. Copy the prompt below, change the topic if you like, and send it.
-4. Review the storyboard. Reply **“Confirm, render it”** when you are happy. ChatGPT should return a downloadable MP4 if its sandbox has a working encoder.
+2. Attach it to a new ChatGPT conversation.
+3. Send the prompt below, editing the topic.
+4. Review the storyboard and reply **“Confirm, render it”**. ChatGPT should return a real downloadable MP4 if its sandbox has a working encoder.
 
 ```text
-Use the attached Chatreel ZIP to make a code-rendered short film.
-Extract it, read its README and ATTRIBUTION.md, and use its included
-renderer-py/render.py and film-schema.json. Check render.capabilities()
-before starting; do not attempt internet downloads or package installs.
+Use the attached Chatreel package to make a code-rendered educational video.
+Extract it and read README.md. Inspect render.capabilities() and the runnable
+examples in templates/. Do not download packages or use generation models.
 
-Topic: How solar panels turn sunlight into electricity.
-Length: 15 seconds.
-Style: blueprint.
-Voice: subtitles only, with original procedural music.
+Topic: How solar electricity reaches a home.
+Audience: A curious beginner.
+Length: About 45–60 seconds.
+Theme: studio.
+Voice: subtitles and procedural music; no synthetic narration.
 
-First show me a short storyboard with scene timings, visuals and captions.
-Wait for my explicit confirmation before rendering. Then validate the film
-JSON, use the included renderer, inspect representative frames, and return
-the actual MP4 download plus the film JSON and subtitles. If MP4 encoding
-is unavailable, explain the limitation and provide the generated artifacts.
-Keep the package's attribution and license notices when sharing source.
+Use semantic templates such as solar-energy, comparison, equation and recap.
+Show the actual mechanism, with correct labels and units, rather than generic
+shapes with unrelated narration. Mark illustrative data and simplifications.
+First show the storyboard and wait for my explicit confirmation.
+
+After confirmation, validate the JSON with the included renderer. Use the
+production profile for 1080p if the sandbox can finish it; otherwise explain
+and make a smaller preview. Inspect frames, quality.json, scene-metrics.json
+and any reading warnings. Give me the actual MP4, JSON, subtitles and credits.
+Do not claim external facts were verified unless you checked their sources.
 ```
 
-**Change the style:** `swiss-motion` (graphic grid), `blueprint` (technical drawing), `chalkboard` (drawn lesson), `woodcut` (carved print), or `pixel-rpg` (game-like pixels). For your own narration, attach a recording too and ask ChatGPT to mix it using the local `voice_path` option. Offline rendering does not synthesize speech.
+**A repository link alone is not enough to run the renderer.** Browsing availability varies, and Code Interpreter cannot download the code from the internet. Upload the ZIP into the chat; a README uploaded by itself contains instructions but no engine. If file uploads/Data Analysis are unavailable, use a compatible session or run locally.
 
-**Can I just paste this repository link into ChatGPT?** You can share https://github.com/yashmgupta/chatreel so people can find these steps. A link alone does not install or run the renderer: browsing availability varies, and Code Interpreter cannot download the package from the internet. Uploading the ZIP makes the source available inside the rendering sandbox. Uploading only the README explains the workflow but does not provide the renderer. If uploads or Data Analysis are unavailable in that session, use a compatible session or run the project locally.
+Offline mode has no browser, WebGL or TTS. You can attach your own narration recording and ask ChatGPT to pass its local path as `voice_path`. If no encoder is available, the renderer exports PNG frames, WAV and SRT and explicitly reports that it could not create an MP4.
 
-For a shared experience where people only open your GPT and describe a film, configure a Custom GPT **with the hosted render Action** described below. That requires deploying the server and connecting its HTTPS endpoint; this repository does not include an already-hosted service.
+## 18 educational templates
 
-## Five styles you can render today
+![Frames decoded from actual template MP4s](docs/media/education-gallery.jpg)
 
-Every preview below comes from a checked-in MP4. Click a frame to open its five-second test clip; the accompanying JSON is editable.
-
-| Style | Rendered preview | Try it for |
+| Family | Templates | What is checked |
 |---|---|---|
-| **Swiss Motion** | [![Swiss Motion: paper grid, ink and one orange signal](docs/media/swiss-motion.jpg)](examples/styles/swiss-motion/server.mp4) | Graphic explainers and minimal motion posters |
-| **Blueprint** | [![Blueprint: pale technical linework on blue](docs/media/blueprint.jpg)](examples/styles/blueprint/server.mp4) | Simple engineering and process lessons |
-| **Chalkboard** | [![Chalkboard: light chalk geometry on a framed green board](docs/media/chalkboard.jpg)](examples/styles/chalkboard/server.mp4) | Classroom-style visual explanations |
-| **Woodcut** | [![Woodcut: carved contours on a black plate with paper margins](docs/media/woodcut.jpg)](examples/styles/woodcut/server.mp4) | Restrained print-like visual stories |
-| **Pixel RPG** | [![Pixel RPG: low-resolution geometry and a dialog box](docs/media/pixel-rpg.jpg)](examples/styles/pixel-rpg/server.mp4) | Game-like messages and small journeys |
+| Explain an idea | `title`, `concept`, `labeled-diagram`, `recap` | Explicit labels, readable bounds, no text collisions |
+| Explain a sequence | `process`, `cycle`, `timeline` | Supplied order, directional connectors, deterministic motion |
+| Compare quantities | `bar-chart`, `line-chart`, `donut-chart`, `comparison` | Proportional geometry, shared scales, nonnegative parts where required |
+| Teach mathematics | `equation`, `number-line`, `fraction` | Restricted Decimal arithmetic, positioned values, equal-area cells |
+| Explain a mechanism | `solar-energy`, `water-cycle` | Meaningful named components and documented simplifications |
+| Practice and demonstrate | `quiz`, `code-walkthrough` | Delayed answer reveal, explicit correct option, preserved code indentation |
 
-[Browse all example scripts and MP4s](examples/) · [See decoded frame comparisons](examples/server-contact-sheet.jpg) · [Read the validation evidence](docs/VALIDATION.md)
+**[Browse the runnable template JSONs](templates/)** · **[View Python and Canvas test clips](examples/education/templates/)**
 
-## Create the Custom GPT
+Themes: `studio`, `midnight`, `paper`, `ocean`, `coral`, `violet`. Five legacy palettes/styles—`swiss-motion`, `blueprint`, `chalkboard`, `woodcut`, `pixel-rpg`—also remain available. Legacy object scenes still work. Applying a legacy palette to a new template does not reproduce its full original material engine.
 
-1. In ChatGPT, create a GPT and paste `gpt/instructions.md` into Instructions (under 8,000 characters).
-2. Enable **Code Interpreter & Data Analysis** for offline rendering. Upload `film-schema.json`, `gpt/knowledge/DIRECTOR.md`, `gpt/knowledge/TECHNIQUE.md` and `gpt/knowledge/SUPPORTED-STYLES.md` as knowledge. These four small files are the recommended retrieval set. Individual condensed prompts for every upstream style live under `gpt/knowledge/styles/`; unsupported ones are reference only. Do not upload all 66 individually (knowledge file limits vary).
-3. Download the ready-to-upload `gpt/chatreel-offline.zip` (or rebuild with `python tools/package_offline.py`). Attach that ZIP to the rendering conversation as a normal file upload. Knowledge retrieval is not a reliable filesystem for source code. The user must provide the ZIP in each new conversation where it is unavailable.
-4. Optional server mode: deploy the server below. In GPT Actions import `openapi.yaml`, replace `https://render.example.com` with your HTTPS origin, select API Key authentication with custom header **X-API-Key**, and enter the server key securely. Supply your deployment's privacy policy if publishing the GPT.
-5. Test “Make a five-second blueprint film about a small signal, with subtitles.” The GPT gathers missing preferences, shows a storyboard, waits for confirmation, renders, polls if needed, and returns the actual MP4. Rendering API calls transmit script/narration to your server. A real GPT configuration and public HTTPS Action are user deployment steps; this repository does not create either automatically.
+Template examples include reading holds. The five-second test clips are QA samples, not recommended pacing for every full lesson. The renderer reports a heuristic recommended reading duration; review it with your audience in mind.
 
-## Mode A — offline Code Interpreter
+## Render locally
 
-Pillow and numpy are required. No network, browser, WebGL or TTS. Captions are burned in and exported as SRT; an uploaded recording may be mixed as a local file. ffmpeg is preferred; moviepy is an optional fallback. With neither encoder, PNG sequence/WAV/SRT are returned and no MP4 success is claimed. A sandbox without Pillow or numpy receives a clear missing-prerequisite error; the renderer does not attempt internet installs.
-
-After extracting the ZIP in Code Interpreter:
-
-```python
-import sys, json
-from pathlib import Path
-sys.path.insert(0, '/mnt/data/chatreel/renderer-py')  # adjust to extraction directory
-import render
-print(render.capabilities())
-film = json.loads(Path('/mnt/data/chatreel/examples/film.json').read_text())
-result = render.render_film(film, '/mnt/data/film')
-# Optional: voice_path='/mnt/data/uploaded-narration.wav'
-print(result)
-```
-
-For local development with internet during installation:
+Python 3.11+, Pillow, numpy and ffmpeg are sufficient. Fonts are bundled. No Manim, browser, model or internet is needed during Python rendering.
 
 ```sh
+git clone https://github.com/yashmgupta/chatreel.git
+cd chatreel
 python -m venv .venv
 . .venv/bin/activate
 pip install -r renderer-py/requirements.txt
+# Install ffmpeg/ffprobe with your OS package manager.
+
 python renderer-py/render.py --capabilities
-python renderer-py/render.py examples/film.json --out artifacts/demo
+python renderer-py/render.py --templates
+python renderer-py/render.py --template solar-energy --theme ocean --preflight
+python renderer-py/render.py --template solar-energy --theme ocean \
+  --profile production --out artifacts/solar
+python renderer-py/render.py --template fraction --aspect portrait \
+  --out artifacts/fraction
+python renderer-py/render.py examples/education/solar-lesson.json \
+  --out artifacts/lesson
 ```
 
-Install ffmpeg through your OS package manager. Without ffmpeg an uploaded recording must be mono PCM16 WAV, 24 kHz; with ffmpeg other locally decodable audio formats work. Voice longer than the film is trimmed; shorter voice leaves music afterward. Align the recording yourself to scene times. `Scene(film, scene).render(t)` takes **local scene seconds** and returns a Pillow image; `frame_at(film, t)` uses global film seconds. Pure deterministic frames allow out-of-order rendering.
+For custom content, edit a template JSON. The schema is shared by both modes. New scenes use `template` and `content`; old scenes use `objects`. Do not mix both in one scene.
 
-## Mode B — Action render service
+```json
+{
+  "title": "Average speed",
+  "style": "studio",
+  "profile": "production",
+  "scenes": [{
+    "template": "equation",
+    "title": "Distance divided by time",
+    "duration": 9,
+    "content": {
+      "expression": "distance / time",
+      "variables": {"distance": 120, "time": 2},
+      "variable_units": {"distance": "km", "time": "h"},
+      "result": 60,
+      "unit": "km/h"
+    }
+  }]
+}
+```
 
-Linux, Python 3.11+, ffmpeg/ffprobe, eSpeak NG and Chromium. The Docker image installs them from signed Debian repositories; Playwright controls system Chromium, so it needs no browser download at runtime.
+`production` defaults to **1920×1080 at 30 fps**. `preview` retains smaller defaults; bundled templates explicitly use 1280×720. `--aspect portrait` or `square` selects a matching layout. All scene durations must align to whole frames. Limits: 120 seconds, 3600 frames, six billion pixel-frames in production / 1.5 billion in preview, and maximum 1920 pixels per dimension. Maximum dimensions, duration and fps cannot all be combined.
+
+The engine compiles a scene once, uses deterministic easing and caches settled static layers. Python and Canvas evaluate the same drawing commands. Text is measured against bundled fonts; overflow, collisions and unsupported glyphs fail preflight rather than disappearing or shrinking to unreadable sizes. SVG snapshots and inspectable numerical metrics come from the same scene.
+
+Outputs include `film.mp4`, `film.json`, `film.srt`, `mix.wav`, `master.wav`, `poster.png`, `contact-sheet.jpg`, `quality.json`, `scene-metrics.json`, `SOURCES.json`, `scene-*.svg` and `CREDITS.txt` when applicable. ffmpeg uses H.264/AAC, explicit BT.709 limited-range conversion, fast-start MP4 and two-pass loudness normalization. ffprobe checks actual frame count, dimensions, duration and streams. MoviePy is an optional encoding fallback; its audio normalization is reported as unmeasured when system ffmpeg is unavailable.
+
+### Python / Code Interpreter API
+
+After extracting the upload ZIP:
+
+```python
+import json, sys
+from pathlib import Path
+sys.path.insert(0, '/mnt/data/chatreel/renderer-py')  # adjust extraction path
+import render
+print(render.capabilities())
+film = json.loads(Path('/mnt/data/chatreel/templates/equation.json').read_text())
+result = render.render_film(film, '/mnt/data/my-film')
+# Optional: voice_path='/mnt/data/uploaded-recording.wav'
+print(result)
+```
+
+`Scene.render(t)` takes local scene seconds. `FilmRenderer.frame(t)` takes global film seconds and retains compiled layouts. `validate(film)` runs schema and semantic/layout checks. The renderer never installs or downloads at runtime. Without ffmpeg, uploaded voice must be mono PCM16 WAV at 24 kHz; with ffmpeg other locally decodable formats work. Recording alignment is the caller's responsibility.
+
+## Create a Custom GPT
+
+1. Paste `gpt/instructions.md` into Instructions (under 8,000 characters).
+2. Enable Code Interpreter & Data Analysis.
+3. Upload `film-schema.json` plus `gpt/knowledge/DIRECTOR.md`, `TECHNIQUE.md` and `EDUCATION.md` as knowledge. `SUPPORTED-STYLES.md` is optional for old-style requests. Do not upload all 66 upstream reference prompts individually.
+4. For offline use, users attach `gpt/chatreel-offline.zip` in the conversation. Rebuild it with `python tools/package_offline.py` after changing bundled files.
+5. To avoid the per-conversation ZIP upload, deploy the server below and add it as an Action. Import `openapi.yaml`, replace `https://render.example.com` with your HTTPS origin, select custom API-key header **X-API-Key**, and enter the key securely. Provide your own privacy policy if publishing the GPT.
+
+No public render service or already-configured GPT is included. ChatGPT libraries and execution budgets vary; the local/Docker checks do not guarantee every sandbox can finish a full-HD film.
+
+## Self-host the GPT Action
+
+The server uses FastAPI, a persistent SQLite job queue, sandboxed Chromium, the shared scene compiler, conventional eSpeak speech, procedural audio and ffmpeg. eSpeak is optional formant synthesis, not a neural model or cloned voice.
 
 ```sh
 docker build -f server/Dockerfile -t chatreel .
-# Generate a secret into a local file; do not commit it or paste it in chat.
 python -c "import secrets; print('RENDER_API_KEY='+secrets.token_urlsafe(32))" > .env
-# Add PUBLIC_BASE_URL=https://your-render-host.example to .env.
-# Protect the file using your OS's access controls.
+# Add PUBLIC_BASE_URL=https://your-real-https-origin to .env; protect the file.
 docker volume create chatreel-data
 docker run --rm --name chatreel --init --env-file .env \
   --cpus=2 --memory=2g --pids-limit=256 --shm-size=256m \
@@ -137,71 +176,44 @@ docker run --rm --name chatreel --init --env-file .env \
   -p 127.0.0.1:8000:8000 -v chatreel-data:/data chatreel
 ```
 
-Put an HTTPS reverse proxy in front; cap request bodies at 64 KiB and set request timeouts. Set the public origin before distributing signed download links. Keep one Uvicorn worker per mounted JOB_DIR; an advisory lock rejects a second instance. The shared GPT API key gives access to all jobs with known IDs; do not treat this as a multi-tenant account system. Use separate deployments/keys for separate trust groups. Signed download links are bearer access for 15 minutes; avoid logging their query strings. Artifacts expire after 24 hours by default. No outbound network is required during rendering.
+Use an HTTPS reverse proxy with a 64 KiB body limit and request timeouts. The bundled Playwright seccomp profile permits Chromium namespace syscalls while keeping a default-deny policy. Chromium's internal sandbox remains enabled; the host must also permit its namespaces. A managed custom-CA environment can build with `--secret id=ca_bundle,src=/etc/ssl/certs/ca-certificates.crt`.
 
-Chromium's sandbox remains enabled. The bundled Playwright seccomp profile permits the namespace syscalls it needs while keeping a default-deny syscall policy. The host/container policy must also permit its user namespaces; if startup fails, inspect `worker.log` and use a host with supported Chromium sandboxing. Do not silently disable it. In a managed environment with a custom CA, build with `--secret id=ca_bundle,src=/etc/ssl/certs/ca-certificates.crt`; the temporary trust bundle is mounted only during dependency installation.
-
-Native server development:
-
-```sh
-pip install -r server/requirements.txt
-# Install chromium, ffmpeg, espeak-ng with your OS package manager first.
-export CHROMIUM_EXECUTABLE=/usr/bin/chromium
-# Set RENDER_API_KEY securely and PUBLIC_BASE_URL to your HTTPS origin.
-uvicorn server.app:app --host 127.0.0.1 --port 8000 --workers 1 --no-access-log
-```
-
-API (all requests use `X-API-Key`, except a signed download URL):
-
-| Route | Behavior |
+| Endpoint | Result |
 |---|---|
-| `GET /styles` | Five supported IDs and resource limits |
-| `POST /render` | Validate film JSON and return 202 `{id,status,poll_after_seconds}` |
-| `GET /jobs/{job_id}` | queued/running/completed/failed; completion includes signed MP4 URL |
-| `GET /jobs/{job_id}/download` | MP4 with API key or expiring signed ticket |
+| `GET /templates` | 18 semantic templates, themes, profiles and accuracy limits |
+| `GET /styles` | Available style/theme IDs and resource limits |
+| `POST /render` | Validate JSON, enqueue and return 202 with job ID |
+| `GET /jobs/{job_id}` | Status, errors/reading warnings, and signed download URL on completion |
+| `GET /jobs/{job_id}/download` | MP4 using API key or a short-lived signed ticket |
 
-The persistent SQLite queue claims work atomically; one subprocess renders at a time. Defaults: eight queued/running jobs, 300-second job deadline, 512 MiB output/job, 2 GiB storage cap, 24-hour retention. Configure `JOB_DIR`, `RENDER_TIMEOUT` and `JOB_TTL`. A deadline kills the entire job process group. Restarted running jobs become failed; queued jobs survive. Failures have no download. Inspect per-job `worker.log` on the server for detailed errors. API status exposes a sanitized error. Incoming scripts cannot contain paths, remote URLs, JavaScript or HTML.
+All endpoints require `X-API-Key`, except a valid signed download link. Links expire after 15 minutes. Artifacts expire after 24 hours. Defaults: eight queued/running jobs, 300-second deadline, 512 MiB/job and 2 GiB total storage cap. Configure `JOB_DIR`, `RENDER_TIMEOUT`, `JOB_TTL`; complex HD jobs may need a longer deadline. One Uvicorn worker per job directory is enforced. Deadlines kill job subprocess groups; interrupted running jobs fail on restart and queued jobs survive. No rendering-time outbound network is needed.
 
-## Film language and styles
+This is a single-machine queue, not multi-tenant hosting. A shared key can access known job IDs. Use separate trust groups/deployments and operator rate limiting. Avoid logging signed URL query strings. Inspect per-job `worker.log` for detailed failures. No user Python, JavaScript, HTML, asset URLs or filesystem paths are accepted by the Action.
 
-`film-schema.json` defines the common language. Scenes run sequentially; `duration` is seconds, music cues are absolute film seconds. Defaults: 640×360, 24 fps. Maximum 120 seconds, 3600 frames, 1280×720 dimensions and 1.5 billion pixel-frames (so the maximum length and resolution cannot all be combined). Dimensions must be even. Actor positions are normalized; size is a fraction of frame height. Semantic validation reserves title/caption lanes and checks actors stay in frame with camera/motion. Keep text concise; long captions are fitted to three lines, and language coverage depends on local fonts.
+Native development: install `server/requirements.txt`, Chromium, ffmpeg and eSpeak NG; set `CHROMIUM_EXECUTABLE`, `RENDER_API_KEY`, `PUBLIC_BASE_URL`, then run `uvicorn server.app:app --host 127.0.0.1 --port 8000 --workers 1 --no-access-log`.
 
-| Style | Ported visual grammar | Procedural sound |
-|---|---|---|
-| swiss-motion | Paper grid, ink, one signal color, snapped reveal | Precise harmonic pulse |
-| blueprint | Blue sheet, linework, dimensions, figure labels | Mechanical partials |
-| chalkboard | Green framed board, grain, chalk line reveal | Soft decaying tones |
-| woodcut | Paper margin, black plate, carved contours/hatching | Inharmonic wood/metal partials |
-| pixel-rpg | 320×180 native framebuffer, nearest-neighbor, stepped action, dialog box | Pulse-wave motif |
+## What “accurate” means here
 
-Actors: circle, box, triangle, person. Motion: still, drift, pulse. Camera: locked, push, pan. This is a constrained composition system, not arbitrary code generation. Templates and a port checklist: `styles/TEMPLATE.md`, `styles/ADDING.md`.
+The renderer checks arithmetic, numbers-to-geometry mappings, input consistency, font/layout bounds and encoded file properties. It **does not verify arbitrary scientific facts, source URLs or dimensional analysis**. Supply trustworthy material and review publication content with subject expertise. Example data is visibly marked illustrative; source URLs are recorded without being fetched.
 
-## Tests and examples
+Solar-energy is a simplified energy-flow explanation, not wiring instructions. Water-cycle shows selected processes, not a complete hydrological simulation. Icons are schematic; the atom symbol does not depict literal electron orbits. Supported arithmetic is deliberately small and accepts no executable expressions. Bundled fonts have limited script coverage; unsupported glyphs fail clearly. SVG viewers need the corresponding DejaVu fonts for matching text metrics.
+
+## Validation and development
+
+See [v2 validation](docs/V2-VALIDATION.md), [per-template encoded audit](docs/education-audit.json), [original analysis](docs/ANALYSIS.md) and [renderer research](docs/RENDERER-RESEARCH.md).
 
 ```sh
-pip install -r tests/requirements.txt
+pip install -r server/requirements.txt -r tests/requirements.txt
 python -m unittest discover -s tests -v
-python tools/validate_styles.py
+# Offline-only checks:
+python -m unittest discover -s tests -p test_render.py -v
+python -m unittest discover -s tests -p test_education.py -v
+# Review clips (5 seconds each, not full reading holds):
+python tools/render_education.py
+CHROMIUM_EXECUTABLE=/usr/bin/chromium python tools/render_education.py --backend canvas
 python tools/package_offline.py
 ```
 
-The full suite includes real browser jobs and needs sandbox-capable Chromium plus eSpeak. For offline-only tests: `python -m unittest discover -s tests -p test_render.py -v`. Tests validate schema, limits, deterministic frames, a five-second MP4, audio, voice mixing, missing-encoder export, auth, body/queue caps, signed URLs, failed speech and all five server styles. `tools/validate_styles.py` renders every offline style. See `examples/` for scripts, finished MP4s, SRT and reviewed contact sheets.
+Full tests need sandbox-capable Chromium and eSpeak. CI runs Python checks and a Docker browser/TTS smoke render; consult its actual status badge. Five legacy styles remain covered by regression tests and their [original examples](examples/styles/).
 
-## Known limitations
-
-- Offline has no WebGL, online TTS or internet. An actual ChatGPT sandbox may have different libraries; probe every session. This release is tested locally, not inside a live Custom GPT session.
-- Server WebGL is a texture-compositing pass; arbitrary 3D shaders/scenes are not part of the film language.
-- TTS uses plain English eSpeak (`en-us`), not expressive neural speech. It rejects lines that do not fit their scenes; captions are scene-aligned, not word-aligned. No ASR verification is bundled.
-- No sample-library downloads, detailed original brush/character engines, stock media, imported assets, maps or footage-based styles. Music is original synthesis with a limited timbre set. Fonts are system defaults; complex scripts/CJK need suitable fonts and shaping work.
-- Single-machine local-volume queue. No horizontal scaling, cancellation endpoint or per-user accounts. A public production deployment needs operator-level rate limiting and monitoring.
-
-## Help shape Chatreel
-
-If Chatreel is useful to you, **star the repository** to help other people find it. Try a film, report what went wrong, or improve a style—each helps make the project more useful.
-
-- [Report a rendering problem](https://github.com/yashmgupta/chatreel/issues/new?template=bug_report.yml).
-- [Suggest an improvement](https://github.com/yashmgupta/chatreel/issues/new?template=feature_request.yml).
-- [Share a film you made](https://github.com/yashmgupta/chatreel/issues/new?template=showcase.yml), with the script if you can.
-- [Contribute a style or fix](CONTRIBUTING.md). Start with the focused ideas there; no large refactor is needed.
-
-See the [roadmap](ROADMAP.md) for possible next steps, the [upstream analysis](docs/ANALYSIS.md) for the adaptation's foundation, and [ATTRIBUTION.md](ATTRIBUTION.md) for license details. Roadmap entries are proposals, not promised release dates.
+If Chatreel helps you, star the repository, [share a film](https://github.com/yashmgupta/chatreel/issues/new?template=showcase.yml), [report a problem](https://github.com/yashmgupta/chatreel/issues/new?template=bug_report.yml), or [contribute](CONTRIBUTING.md). [Adding a style](styles/ADDING.md) and the [roadmap](ROADMAP.md) explain the intended scope.

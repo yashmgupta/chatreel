@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+<rect x="0" y="0" width="1280" height="720" rx="0" fill="#f5f3ed" opacity="1.00000" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="12" height="720" rx="0" fill="#c94726" opacity="1.00000" stroke="none" stroke-width="1"/>
+<text x="52" y="46.0" font-family="DejaVu Sans" font-size="19" font-weight="700" fill="#536675" opacity="1.00000">CHATREEL / LEARN IN MOTION</text>
+<text x="1200.15625" y="47.0" font-family="DejaVu Sans" font-size="20" font-weight="700" fill="#c94726" opacity="1.00000">02</text>
+<text x="52" y="124.0" font-family="DejaVu Sans" font-size="49" font-weight="700" fill="#182b3a" opacity="1.00000">Follow the energy conversion</text>
+<text x="52" y="182.0" font-family="DejaVu Sans" font-size="27" font-weight="400" fill="#536675" opacity="1.00000">A simplified grid-compatible energy flow</text>
+<polyline points="52,604 1228,604" fill="none" stroke="#dce2e4" stroke-width="1" opacity="1"/>
+<text x="52" y="645.0" font-family="DejaVu Sans" font-size="26" font-weight="400" fill="#182b3a" opacity="1.00000">Panels produce DC electricity. An inverter converts it to AC for household use.</text>
+<text x="52" y="707.0" font-family="DejaVu Sans" font-size="16" font-weight="400" fill="#536675" opacity="1.00000">U.S. DOE · Solar Photovoltaic Technology Basics</text>
+<ellipse cx="199.0" cy="330.2" rx="19.200000000000003" ry="19.200000000000003" fill="#c94726" opacity="1.00000" stroke="none" stroke-width="2"/>
+<polyline points="228.76,330.2 244.12,330.2" fill="none" stroke="#c94726" stroke-width="3.3600000000000003" opacity="1"/>
+<polyline points="220.04349780811165,351.24349780811167 230.90465796713704,362.10465796713703" fill="none" stroke="#c94726" stroke-width="3.3600000000000003" opacity="1"/>
+<polyline points="199.0,359.96 199.0,375.32" fill="none" stroke="#c94726" stroke-width="3.3600000000000003" opacity="1"/>
+<polyline points="177.95650219188835,351.24349780811167 167.095342032863,362.10465796713703" fill="none" stroke="#c94726" stroke-width="3.3600000000000003" opacity="1"/>
+<polyline points="169.24,330.2 153.88,330.2" fill="none" stroke="#c94726" stroke-width="3.3600000000000003" opacity="1"/>
+<polyline points="177.95650219188835,309.1565021918883 167.09534203286296,298.29534203286295" fill="none" stroke="#c94726" stroke-width="3.3600000000000003" opacity="1"/>
+<polyline points="199.0,300.44 199.0,285.08" fill="none" stroke="#c94726" stroke-width="3.3600000000000003" opacity="1"/>
+<polyline points="220.04349780811165,309.1565021918883 230.904657967137,298.29534203286295" fill="none" stroke="#c94726" stroke-width="3.3600000000000003" opacity="1"/>
+<polyline points="267.0,330.2 425.0,330.2" fill="none" stroke="#126d7c" stroke-width="3" opacity="1"/>
+<polygon points="425.0,330.2 415.3465918192059,335.4736809246462 415.3465918192059,324.9263190753538" fill="#126d7c" opacity="1.00000"/>
+<ellipse cx="345.3416666666667" cy="330.2" rx="4.0" ry="4.0" fill="#c94726" opacity="1.00000" stroke="none" stroke-width="2"/>
+<text x="130.34375" y="452.4" font-family="DejaVu Sans" font-size="29" font-weight="700" fill="#182b3a" opacity="1.00000">Sunlight</text>
+<text x="89.96875" y="523.2" font-family="DejaVu Sans" font-size="24" font-weight="400" fill="#536675" opacity="1.00000">Photons reach the</text>
+<text x="165.703125" y="553.92" font-family="DejaVu Sans" font-size="24" font-weight="400" fill="#536675" opacity="1.00000">panel</text>
+<rect x="452.2" y="302.36" width="81.6" height="55.199999999999996" rx="2.88" fill="none" opacity="1.00000" stroke="#c94726" stroke-width="3.3600000000000003"/>
+<polyline points="472.59999999999997,302.36 472.59999999999997,357.56" fill="none" stroke="#c94726" stroke-width="1.6800000000000002" opacity="1"/>
+<polyline points="493.0,302.36 493.0,357.56" fill="none" stroke="#c94726" stroke-width="1.6800000000000002" opacity="1"/>
+<polyline points="513.4,302.36 513.4,357.56" fill="none" stroke="#c94726" stroke-width="1.6800000000000002" opacity="1"/>
+<polyline points="452.2,330.2 533.8,330.2" fill="none" stroke="#c94726" stroke-width="1.6800000000000002" opacity="1"/>
+<polyline points="493.0,358.03999999999996 493.0,372.44 517.0,372.44 469.0,372.44" fill="none" stroke="#c94726" stroke-width="3.3600000000000003" opacity="1"/>
+<polyline points="561.0,330.2 719.0,330.2" fill="none" stroke="#126d7c" stroke-width="3" opacity="1"/>
+<polygon points="719.0,330.2 709.3465918192059,335.4736809246462 709.3465918192059,324.9263190753538" fill="#126d7c" opacity="1.00000"/>
+<ellipse cx="678.8416666666667" cy="330.2" rx="4.0" ry="4.0" fill="#c94726" opacity="1.00000" stroke="none" stroke-width="2"/>
+<text x="420.8203125" y="452.4" font-family="DejaVu Sans" font-size="29" font-weight="700" fill="#182b3a" opacity="1.00000">PV panel</text>
+<text x="417.0625" y="523.2" font-family="DejaVu Sans" font-size="24" font-weight="400" fill="#536675" opacity="1.00000">Produces DC</text>
+<text x="433.578125" y="553.92" font-family="DejaVu Sans" font-size="24" font-weight="400" fill="#536675" opacity="1.00000">electricity</text>
+<rect x="749.56" y="289.4" width="74.88" height="81.6" rx="4.800000000000001" fill="none" opacity="1.00000" stroke="#c94726" stroke-width="3.3600000000000003"/>
+<polyline points="763.0,313.4 784.6,313.4" fill="none" stroke="#c94726" stroke-width="2.352" opacity="1"/>
+<polyline points="763.0,323.0 784.6,323.0" fill="none" stroke="#c94726" stroke-width="2.352" opacity="1"/>
+<polyline points="763.0,347.0 765.0,349.11196340803656 767.0,351.08 769.0,352.76999133448226 771.0,354.066767294881 773.0,354.8819547425188 775.0,355.16 777.0,354.8819547425188 779.0,354.066767294881 781.0,352.76999133448226 783.0,351.08 785.0,349.11196340803656 787.0,347.0 789.0,344.88803659196344 791.0,342.92 793.0,341.2300086655178 795.0,339.933232705119 797.0,339.1180452574812 799.0,338.84 801.0,339.1180452574812 803.0,339.933232705119 805.0,341.23000866551774 807.0,342.92 809.0,344.88803659196344 811.0,347.0" fill="none" stroke="#c94726" stroke-width="2.352" opacity="1"/>
+<polyline points="855.0,330.2 1013.0,330.2" fill="none" stroke="#126d7c" stroke-width="3" opacity="1"/>
+<polygon points="1013.0,330.2 1003.3465918192059,335.4736809246462 1003.3465918192059,324.9263190753538" fill="#126d7c" opacity="1.00000"/>
+<ellipse cx="1012.3416666666667" cy="330.2" rx="4.0" ry="4.0" fill="#c94726" opacity="1.00000" stroke="none" stroke-width="2"/>
+<text x="720.9296875" y="452.4" font-family="DejaVu Sans" font-size="29" font-weight="700" fill="#182b3a" opacity="1.00000">Inverter</text>
+<text x="664.8515625" y="523.2" font-family="DejaVu Sans" font-size="24" font-weight="400" fill="#536675" opacity="1.00000">Converts DC into AC</text>
+<polyline points="1037.8,327.8 1081.0,289.4 1124.2,327.8" fill="none" stroke="#c94726" stroke-width="3.3600000000000003" opacity="1"/>
+<rect x="1049.8" y="325.4" width="62.400000000000006" height="45.599999999999994" rx="0" fill="none" opacity="1.00000" stroke="#c94726" stroke-width="3.3600000000000003"/>
+<rect x="1072.36" y="342.2" width="17.28" height="28.799999999999997" rx="0" fill="none" opacity="1.00000" stroke="#c94726" stroke-width="2.352"/>
+<text x="1033.9609375" y="452.4" font-family="DejaVu Sans" font-size="29" font-weight="700" fill="#182b3a" opacity="1.00000">Home</text>
+<text x="968.90625" y="523.2" font-family="DejaVu Sans" font-size="24" font-weight="400" fill="#536675" opacity="1.00000">Uses AC electricity</text>
+</svg>
