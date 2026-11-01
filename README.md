@@ -33,31 +33,30 @@ No local coding or Custom GPT setup is required for this route. You need file up
 
 1. **[Download the ChatGPT upload ZIP](https://github.com/yashmgupta/chatreel/raw/refs/heads/main/gpt/chatreel-offline.zip).** Keep it zipped.
 2. Attach it to a new ChatGPT conversation.
-3. Send the prompt below, editing the topic.
+3. Send the guided prompt below. ChatGPT will ask about your idea one question at a time, then turn your answers into a reusable video prompt and storyboard.
 4. Review the storyboard and reply **“Confirm, render it”**. ChatGPT should return a real downloadable MP4 if its sandbox has a working encoder.
 
 ```text
-Use the attached Chatreel package to make a code-rendered educational video.
-Extract it and read README.md. Inspect render.capabilities() and the runnable
-examples in templates/. Do not download packages or use generation models.
+Help me make an educational video with Chatreel. First ask what I want to
+explain and what viewers should learn. Ask one short question at a time
+for the remaining audience, key points/sources, length/platform, look,
+language and sound. Offer simple choices and let me say “choose for me.”
+Skip anything I already answered.
 
-Topic: How solar electricity reaches a home.
-Audience: A curious beginner.
-Length: About 45–60 seconds.
-Theme: studio.
-Voice: subtitles and procedural music; no synthetic narration.
+Use my answers to write a reusable Video production prompt and a timed
+storyboard using supported Chatreel templates. Keep facts, labels, units
+and calculations accurate; mark illustrative data and unverified claims.
+Use conventional code only, with no image/video generation models.
 
-Use semantic templates such as solar-energy, comparison, equation and recap.
-Show the actual mechanism, with correct labels and units, rather than generic
-shapes with unrelated narration. Mark illustrative data and simplifications.
-First show the storyboard and wait for my explicit confirmation.
+Show me the prompt and storyboard and wait for my explicit confirmation
+before rendering. Update them if I ask for changes. When I confirm, use
+the attached package, check capabilities, validate the film JSON, render,
+and inspect the real outputs. If I only want a reusable prompt, stop there.
 
-After confirmation, validate the JSON with the included renderer. Use the
-production profile for 1080p if the sandbox can finish it; otherwise explain
-and make a smaller preview. Inspect frames, quality.json, scene-metrics.json
-and any reading warnings. Give me the actual MP4, JSON, subtitles and credits.
-Do not claim external facts were verified unless you checked their sources.
+Start with the first question about my topic and learning objective.
 ```
+
+**Just want a prompt first?** You can start the interview without uploading anything. Use the [full starter prompt](gpt/start-here.md). ChatGPT should produce your personalized brief and storyboard; upload the ZIP when you are ready to render.
 
 **A repository link alone is not enough to run the renderer.** Browsing availability varies, and Code Interpreter cannot download the code from the internet. Upload the ZIP into the chat; a README uploaded by itself contains instructions but no engine. If file uploads/Data Analysis are unavailable, use a compatible session or run locally.
 
@@ -155,7 +154,7 @@ print(result)
 
 1. Paste `gpt/instructions.md` into Instructions (under 8,000 characters).
 2. Enable Code Interpreter & Data Analysis.
-3. Upload `film-schema.json` plus `gpt/knowledge/DIRECTOR.md`, `TECHNIQUE.md` and `EDUCATION.md` as knowledge. `SUPPORTED-STYLES.md` is optional for old-style requests. Do not upload all 66 upstream reference prompts individually.
+3. Upload `film-schema.json` plus `gpt/knowledge/DIRECTOR.md`, `TECHNIQUE.md`, `EDUCATION.md` and `BRIEFING.md` as knowledge. `SUPPORTED-STYLES.md` is optional for old-style requests. Do not upload all 66 upstream reference prompts individually.
 4. For offline use, users attach `gpt/chatreel-offline.zip` in the conversation. Rebuild it with `python tools/package_offline.py` after changing bundled files.
 5. To avoid the per-conversation ZIP upload, deploy the server below and add it as an Action. Import `openapi.yaml`, replace `https://render.example.com` with your HTTPS origin, select custom API-key header **X-API-Key**, and enter the key securely. Provide your own privacy policy if publishing the GPT.
 

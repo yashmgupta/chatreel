@@ -8,7 +8,7 @@ with ZipFile(out/'chatreel-offline.zip','w',ZIP_DEFLATED) as z:
     files=[ROOT/'film-schema.json',ROOT/'ATTRIBUTION.md',ROOT/'LICENSE',ROOT/'README.md',ROOT/'examples/film.json']
     files+=list((ROOT/'renderer-py').glob('*.py'))+list((ROOT/'renderer-py').glob('*.txt'))+list((ROOT/'licenses').glob('*'))
     files+=list((ROOT/'renderer-py/assets').rglob('*.ttf'))
-    files+=list((ROOT/'templates').glob('*.json'))+[ROOT/'templates/README.md',ROOT/'gpt/knowledge/EDUCATION.md']
+    files+=list((ROOT/'templates').glob('*.json'))+[ROOT/'templates/README.md',ROOT/'gpt/knowledge/EDUCATION.md',ROOT/'gpt/knowledge/BRIEFING.md',ROOT/'gpt/start-here.md']
     for p in files:z.write(p,'chatreel/'+str(p.relative_to(ROOT)))
 shutil.copy2(out/'chatreel-offline.zip',ROOT/'gpt/chatreel-offline.zip')
 print(out/'chatreel-offline.zip')
