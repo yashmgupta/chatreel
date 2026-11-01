@@ -4,6 +4,40 @@ Code-rendered short films from a ChatGPT conversation. Adapted from [Lemomo/Lemo
 
 Read [the upstream analysis](docs/ANALYSIS.md), [design](docs/DESIGN.md), [validation evidence](docs/VALIDATION.md) and [attribution](ATTRIBUTION.md). Code: MIT. Adapted style knowledge: CC BY 4.0; original MIT and CC BY legal texts are in `licenses/`. These ports preserve selected visual rules, not the complete original engines.
 
+## Start here — make a film in a ChatGPT chat
+
+**No coding or Custom GPT setup is needed for this route.** You need a ChatGPT session with file uploads and Code Interpreter / Data Analysis available.
+
+1. **[Download the ChatGPT upload ZIP](https://github.com/yashmgupta/chatreel/raw/refs/heads/main/gpt/chatreel-offline.zip).** Keep it zipped.
+2. Open a new ChatGPT conversation and **attach that ZIP** using the file-upload button.
+3. Copy the prompt below, change the topic if you like, and send it.
+4. Review the storyboard. Reply **“Confirm, render it”** when you are happy. ChatGPT should return a downloadable MP4 if its sandbox has a working encoder.
+
+```text
+Use the attached Chatreel ZIP to make a code-rendered short film.
+Extract it, read its README and ATTRIBUTION.md, and use its included
+renderer-py/render.py and film-schema.json. Check render.capabilities()
+before starting; do not attempt internet downloads or package installs.
+
+Topic: How solar panels turn sunlight into electricity.
+Length: 15 seconds.
+Style: blueprint.
+Voice: subtitles only, with original procedural music.
+
+First show me a short storyboard with scene timings, visuals and captions.
+Wait for my explicit confirmation before rendering. Then validate the film
+JSON, use the included renderer, inspect representative frames, and return
+the actual MP4 download plus the film JSON and subtitles. If MP4 encoding
+is unavailable, explain the limitation and provide the generated artifacts.
+Keep the package's attribution and license notices when sharing source.
+```
+
+**Change the style:** `swiss-motion` (graphic grid), `blueprint` (technical drawing), `chalkboard` (drawn lesson), `woodcut` (carved print), or `pixel-rpg` (game-like pixels). For your own narration, attach a recording too and ask ChatGPT to mix it using the local `voice_path` option. Offline rendering does not synthesize speech.
+
+**Can I just paste this repository link into ChatGPT?** You can share https://github.com/yashmgupta/chatreel so people can find these steps. A link alone does not install or run the renderer: browsing availability varies, and Code Interpreter cannot download the package from the internet. Uploading the ZIP makes the source available inside the rendering sandbox. Uploading only the README explains the workflow but does not provide the renderer. If uploads or Data Analysis are unavailable in that session, use a compatible session or run the project locally.
+
+For a shared experience where people only open your GPT and describe a film, configure a Custom GPT **with the hosted render Action** described below. That requires deploying the server and connecting its HTTPS endpoint; this repository does not include an already-hosted service.
+
 ## Create the Custom GPT
 
 1. In ChatGPT, create a GPT and paste `gpt/instructions.md` into Instructions (under 8,000 characters).
