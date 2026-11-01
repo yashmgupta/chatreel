@@ -1,8 +1,38 @@
+<div align="center">
+
 # Chatreel
 
-Code-rendered short films from a ChatGPT conversation. Adapted from [Lemomo/LemoLab's Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar). Five compact style ports, two execution modes, one JSON timeline. No video-generation models or stock footage.
+**Turn a ChatGPT conversation into a short, code-rendered film.**
 
-Read [the upstream analysis](docs/ANALYSIS.md), [design](docs/DESIGN.md), [validation evidence](docs/VALIDATION.md) and [attribution](ATTRIBUTION.md). Code: MIT. Adapted style knowledge: CC BY 4.0; original MIT and CC BY legal texts are in `licenses/`. These ports preserve selected visual rules, not the complete original engines.
+Storyboard → confirm → render → download your MP4.
+
+[![Download the ChatGPT kit](https://img.shields.io/badge/Download-ChatGPT_kit-2563eb?style=for-the-badge)](https://github.com/yashmgupta/chatreel/raw/refs/heads/main/gpt/chatreel-offline.zip)
+[![Watch the example](https://img.shields.io/badge/Watch-15_second_example-7c3aed?style=for-the-badge)](https://github.com/yashmgupta/chatreel/blob/main/examples/story.mp4)
+
+[![MIT code](https://img.shields.io/badge/Code-MIT-22c55e)](LICENSE)
+[![CC BY 4.0 styles](https://img.shields.io/badge/Style_adaptations-CC_BY_4.0-22c55e)](ATTRIBUTION.md)
+[![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776ab?logo=python&logoColor=white)](renderer-py/)
+[![Local validation](https://img.shields.io/badge/Local_validation-12_tests_passed-15803d)](docs/VALIDATION.md)
+[![GitHub stars](https://img.shields.io/github/stars/yashmgupta/chatreel?style=flat)](https://github.com/yashmgupta/chatreel/stargazers)
+
+[Start in ChatGPT](#start-here--make-a-film-in-a-chatgpt-chat) · [Five styles](#five-styles-you-can-render-today) · [Self-host the Action](#mode-b--action-render-service) · [Contribute](CONTRIBUTING.md)
+
+![Actual Chatreel renders cycling through Swiss Motion, Blueprint, Chalkboard, Woodcut and Pixel RPG](docs/media/styles-preview.gif)
+
+*Actual clips from the included renderer. Compact geometric style ports, not video-generation models.*
+
+</div>
+
+Make short explainers, visual lessons and simple animated stories with **Python-rendered graphics and original procedural music**. Start with a ZIP uploaded into a ChatGPT Data Analysis session, or connect a Custom GPT to your own render server. No stock footage or video-generation model is used. ChatGPT feature availability varies by session.
+
+Adapted from **[Lemomo/LemoLab's Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar)**, with attribution and original licenses retained. These five ports interpret selected visual rules rather than reproduce the full upstream engines.
+
+| Pick your route | What you need | What you get |
+|---|---|---|
+| **ChatGPT + uploaded ZIP** | File uploads and Data Analysis | Offline 2D rendering, captions or your uploaded narration |
+| **Custom GPT + Action** | Your deployed HTTPS render server | Chromium rendering, simple synthetic speech, optional WebGL compositing |
+
+**New here?** Start with the ZIP route below. Hosting a server is optional.
 
 ## Start here — make a film in a ChatGPT chat
 
@@ -37,6 +67,20 @@ Keep the package's attribution and license notices when sharing source.
 **Can I just paste this repository link into ChatGPT?** You can share https://github.com/yashmgupta/chatreel so people can find these steps. A link alone does not install or run the renderer: browsing availability varies, and Code Interpreter cannot download the package from the internet. Uploading the ZIP makes the source available inside the rendering sandbox. Uploading only the README explains the workflow but does not provide the renderer. If uploads or Data Analysis are unavailable in that session, use a compatible session or run the project locally.
 
 For a shared experience where people only open your GPT and describe a film, configure a Custom GPT **with the hosted render Action** described below. That requires deploying the server and connecting its HTTPS endpoint; this repository does not include an already-hosted service.
+
+## Five styles you can render today
+
+Every preview below comes from a checked-in MP4. Click a frame to open its five-second test clip; the accompanying JSON is editable.
+
+| Style | Rendered preview | Try it for |
+|---|---|---|
+| **Swiss Motion** | [![Swiss Motion: paper grid, ink and one orange signal](docs/media/swiss-motion.jpg)](examples/styles/swiss-motion/server.mp4) | Graphic explainers and minimal motion posters |
+| **Blueprint** | [![Blueprint: pale technical linework on blue](docs/media/blueprint.jpg)](examples/styles/blueprint/server.mp4) | Simple engineering and process lessons |
+| **Chalkboard** | [![Chalkboard: light chalk geometry on a framed green board](docs/media/chalkboard.jpg)](examples/styles/chalkboard/server.mp4) | Classroom-style visual explanations |
+| **Woodcut** | [![Woodcut: carved contours on a black plate with paper margins](docs/media/woodcut.jpg)](examples/styles/woodcut/server.mp4) | Restrained print-like visual stories |
+| **Pixel RPG** | [![Pixel RPG: low-resolution geometry and a dialog box](docs/media/pixel-rpg.jpg)](examples/styles/pixel-rpg/server.mp4) | Game-like messages and small journeys |
+
+[Browse all example scripts and MP4s](examples/) · [See decoded frame comparisons](examples/server-contact-sheet.jpg) · [Read the validation evidence](docs/VALIDATION.md)
 
 ## Create the Custom GPT
 
@@ -150,3 +194,14 @@ The full suite includes real browser jobs and needs sandbox-capable Chromium plu
 - TTS uses plain English eSpeak (`en-us`), not expressive neural speech. It rejects lines that do not fit their scenes; captions are scene-aligned, not word-aligned. No ASR verification is bundled.
 - No sample-library downloads, detailed original brush/character engines, stock media, imported assets, maps or footage-based styles. Music is original synthesis with a limited timbre set. Fonts are system defaults; complex scripts/CJK need suitable fonts and shaping work.
 - Single-machine local-volume queue. No horizontal scaling, cancellation endpoint or per-user accounts. A public production deployment needs operator-level rate limiting and monitoring.
+
+## Help shape Chatreel
+
+If Chatreel is useful to you, **star the repository** to help other people find it. Try a film, report what went wrong, or improve a style—each helps make the project more useful.
+
+- [Report a rendering problem](https://github.com/yashmgupta/chatreel/issues/new?template=bug_report.yml).
+- [Suggest an improvement](https://github.com/yashmgupta/chatreel/issues/new?template=feature_request.yml).
+- [Share a film you made](https://github.com/yashmgupta/chatreel/issues/new?template=showcase.yml), with the script if you can.
+- [Contribute a style or fix](CONTRIBUTING.md). Start with the focused ideas there; no large refactor is needed.
+
+See the [roadmap](ROADMAP.md) for possible next steps, the [upstream analysis](docs/ANALYSIS.md) for the adaptation's foundation, and [ATTRIBUTION.md](ATTRIBUTION.md) for license details. Roadmap entries are proposals, not promised release dates.

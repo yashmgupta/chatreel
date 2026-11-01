@@ -1,0 +1,32 @@
+name: Feature or style idea
+description: Suggest a concrete improvement or a new code-rendered style.
+title: "[Idea]: "
+body:
+  - type: textarea
+    id: use_case
+    attributes:
+      label: What would you like to make?
+      description: Describe the film or workflow and what blocks you today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Explain the smallest useful improvement. For styles, describe the visual grammar rather than copying a demo story.
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Relevant mode
+      options:
+        - Both modes
+        - Offline Python
+        - Hosted server / GPT Action
+        - Documentation
+  - type: textarea
+    id: sources
+    attributes:
+      label: References and licensing
+      description: Optional links, alternatives and applicable licenses. Do not upload assets you lack permission to share.

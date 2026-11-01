@@ -1,0 +1,35 @@
+name: Rendering problem
+description: Report a reproducible offline, server or GPT setup problem.
+title: "[Bug]: "
+body:
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Where did it happen?
+      options:
+        - ChatGPT with uploaded ZIP
+        - Local Python renderer
+        - Render server / GPT Action
+        - Setup documentation
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the command or prompt, expected result and actual result.
+    validations:
+      required: true
+  - type: textarea
+    id: script
+    attributes:
+      label: Minimal film JSON or example filename
+      description: Remove private narration, personal files and credentials before sharing.
+      render: json
+  - type: textarea
+    id: runtime
+    attributes:
+      label: Runtime and error
+      description: Share render.capabilities(), relevant versions and sanitized error text. Never include API keys, .env contents or signed download links.
+    validations:
+      required: true

@@ -1,0 +1,23 @@
+name: Share a film
+description: Show what you made with Chatreel and what you learned.
+title: "[Showcase]: "
+body:
+  - type: input
+    id: style
+    attributes:
+      label: Style and rendering mode
+      placeholder: "blueprint / offline"
+    validations:
+      required: true
+  - type: textarea
+    id: film
+    attributes:
+      label: Your film
+      description: Attach an MP4 or link to a public copy you have permission to share. Avoid private or expiring signed URLs.
+    validations:
+      required: true
+  - type: textarea
+    id: script
+    attributes:
+      label: Script and lessons learned
+      description: Optional film JSON, how you used ChatGPT and anything that could be easier. Remove private information.
